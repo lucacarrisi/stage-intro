@@ -1,0 +1,44 @@
+{
+  "name": "vanilla-ts",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "start": "vite -m=fe",
+    "prebuild": "rm -rf ./dist/*",
+    "build": "tsc && vite build",
+    "drupal": "tsc && vite build -w -m=drupal",
+    "preview": "vite preview",
+    "postbuild": "mv ./dist/src/templates/*.* ./dist && rm -rf ./dist/src"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/plugin-transform-modules-commonjs": "^7.21.2",
+    "@babel/plugin-transform-react-jsx": "^7.22.5",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "@preact/preset-vite": "^2.7.0",
+    "@types/node": "^18.13.0",
+    "@types/react": "^18.2.14",
+    "babel-cli": "^6.26.0",
+    "postcss": "^8.4.21",
+    "postcss-preset-env": "^8.0.1",
+    "prettier": "^2.8.4",
+    "sass": "^1.58.1",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0",
+    "vite-plugin-handlebars": "^1.6.0"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-grid": "^0.4.1",
+    "chart.js": "^4.4.0",
+    "custom-select": "^1.1.15",
+    "d3": "^7.8.5",
+    "handlebars": "^4.7.8",
+    "localforage": "^1.10.0",
+    "preact": "^10.15.1",
+    "select-custom": "^1.1.9",
+    "tabulator-tables": "^5.5.2"
+  }
+}
