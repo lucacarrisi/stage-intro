@@ -231,9 +231,7 @@ body {
     flex-direction: column;
     align-self: center;
     height: 500px;
-    background-image: url("/immagini/bg_finger.png");
-    background-size: cover;
-    background-position: center;
+    background-color: blue;
     margin:0;
     padding: 10px 90px 20px 90px;
 
