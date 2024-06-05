@@ -7,12 +7,134 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+    <link rel="stylesheet" href="./src/css/main.css">
 </head>
 <body>
-<div id="app">
+<!-- LIST 1
     <div class="body">
-        <h1>Hello World!</h1>
+        <ul class="list" >
+            <li class="title">
+                TO-DO LIST
+                <button class="button"><img src="./immagini/plus.svg" class="image"></button>
+            </li>
+            <li class="firstLine">Add New Todo</li>
+            <li class="oddLine">Meet Joseph</li>
+            <li class="evenLine">Buy eggs</li>
+            <li class="oddLine">Read a book</li>
+            <li class="evenLine">Haircut</li>           
+        </ul>
     </div>
+-->
+
+<!-- LIST 2
+    <div class="body">
+        <div class="container" >
+            <div class="title">
+                Todo App 
+            </div>
+            <div class="firstLine">
+                <input class="input" type="text" id="todo" name="todo" placeholder="Add your new todo">
+                <button class="button"><img src="./immagini/plus.svg" class="image"></button>
+            </div>
+            <ul class="list">
+                <li class="line"><span class="text">Buy a new gaming laptop</span></li>
+                <li class="line">
+                    <span class="text">Complete a previous task</span>
+                    <button class="button"><img src="./immagini/bin.svg" class="image"></button>
+                </li>
+                <li class="line"><span class="text">Create video for youtube</span></li>
+                <li class="line"><span class="text">Create a new portfolio site</span></li>
+            </ul>  
+            <div class="lastLine">
+                <div class="text">You have 4 pending tasks</div>
+                <input class="button" type="reset" value="Clear All">
+            </div>
+                     
+        </div>
+    </div>
+-->
+
+<div class="navbar">
+    <div class="logo">
+        <img src="./immagini/logo.svg" class="image">
+        <div class="search">
+            <div class="text">Cerca nel sito</div>
+            <button class="button"><img src="./immagini/search.svg" class="image"></button>
+        </div>
+    </div>
+    <ul class="menu">
+        <li><a href="#" class="text">L'Agenzia</a></li>
+        <li><a href="#" class="text">Ambiti di intervento</a></li>
+        <li><a href="#" class="text">Piattaforme e tecnologie</a></li>
+        <li><a href="#" class="text">Linee guida</a></li>
+        <li><a href="#" class="text">Comunicazione</a></li>
+    </ul>
+</div>
+
+<div class="section-1">
+    <ul class="menu">
+        <li><a href="#" class="text">Home</a></li>
+        <span class="text">/</span>
+        <li><a href="#" class="text">Ambiti di intervento</a></li>
+        <span class="text">/</span></li>
+        <li><span href="#" class="text">Identità digitale</span></li>
+    </ul>
+    <div class="container">
+        <div class="textbox">
+            <div class="title">Identità digitale</div>
+            <div class="text">L’Identità digitale rappresenta <strong>lo strumento che permette ai cittadini di 
+                identificarsi in modo univoco e accedere a tutti i servizi digitali della Pubblica 
+                Amministrazione e a quelli dei privati aderenti.</strong><br><br>Gli strumenti di identificazione 
+                per accedere ai servizi online sono SPID (Sistema Pubblico di Identità Digitale), CIE 
+                (Carta d’Identità Elettronica) e CNS (Carta Nazionale dei Servizi).
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-2">
+    <div class="title">Strategie</div>
+    <div class="text">Nel giro di pochi anni si è passati dalla proliferazione di servizi digitali accessibili
+         tramite credenziali proprietarie diverse per ogni Amministrazione a servizi digitali sempre più 
+         omogenei e accessibili tramite un'identità unica. Ecco i prossimi passi.</div>
+    <ol class="list">
+        <li>
+            <div class="title-list">Decennio digitale europeo</div>
+            <div class="text-list">Le attività di AgID si inseriscono all’interno del <a href="#">Programma strategico 
+                per il decennio digitale</a>, che fissa, a livello europeo, traguardi e obiettivi concreti per il 2030. 
+                Il Programma istituisce un <strong>ciclo di cooperazione annuale</strong> per conseguire gli obiettivi e i 
+                traguardi comuni, basato su un meccanismo di collaborazione annuale che coinvolge la 
+                Commissione Europea e gli Stati membri.</div>
+        </li>
+        <li>
+            <div class="title-list">La strategia Italia Digitale 2026</div>
+            <div class="text-list">Unica, gratuita, facile da usare: in linea con la <a href="#">Strategia Italia digitale 2026</a>, 
+                ogni cittadino deve disporre di <strong>un’identità digitale che gli permetta di identificarsi in maniera 
+                sicura</strong> e di <strong> a tutti i servizi digitali pubblici e privati</strong> in Italia e in Europa. 
+                <strong>AgID coordina il sistema</strong> pubblico dell’identità digitale – SPID.</div>
+        </li>
+    </ol>
+</div>
+
+<div class="section-3">
+    <div class="title">Strumenti</div>
+    <div class="text">AgID promuove strumenti e piattaforme innovative per l’adozione di sistemi di identificazione 
+        digitali da parte delle Pubbliche Amministrazioni.</div>
+        <div>
+            <div class="box">
+                <div><a href="#" class="title-box">SPID</a></div>
+                <div class="text-box">Il Sistema Pubblico di Identità Digitale permette ai cittadini di accedere
+                    ai servizi online delle Pubbliche Amministrazioni e dei soggetti privati aderenti con un'unica
+                    identità digitale.</div>
+            </div>
+            <div class="box">
+                <div><a href="#" class="title-box">eIDAS</a></div>
+                <div class="text-box">Il Regolamento rappresenta la base normativa a livello comunitario per
+                     i servizi fiduciari e i mezzi di identificazione elettronica degli stati membri dell’Unione
+                      europea.</div>
+            </div>
+        </div>
 </div>
 
 </body>
