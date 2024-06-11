@@ -10,7 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
     <link rel="stylesheet" href="./src/css/main.css">
 </head>
-<body>
+
 <!-- LIST 1
     <div class="body">
         <ul class="list" >
@@ -54,11 +54,12 @@
         </div>
     </div>
 -->
+<body>
 
     <div class="header">
         <div class="container-first-line">
             <div class="logo">
-                <img src="src/assets/logo.svg" class="image">
+                <a href="https://www.agid.gov.it/it/ambiti-intervento/identita-digitale" target="_blank"><img src="src/assets/logo.svg" class="image"></a>
             </div>    
             <div class="search">
                 <div class="text">Cerca nel sito</div>
@@ -66,57 +67,59 @@
             </div>
         </div>
         <ul class="navbar">
-            <li><a href="#" class="text">L'Agenzia</a></li>
-            <li><a href="#" class="text">Ambiti di intervento</a></li>
-            <li><a href="#" class="text">Piattaforme e tecnologie</a></li>
-            <li><a href="#" class="text">Linee guida</a></li>
-            <li><a href="#" class="text">Comunicazione</a></li>
+            <li class="list-element"><a href="#" class="text">L'Agenzia</a></li>
+            <li class="list-element"><a href="#" class="text">Ambiti di intervento</a></li>
+            <li class="list-element"><a href="#" class="text">Piattaforme e tecnologie</a></li>
+            <li class="list-element"><a href="#" class="text">Linee guida</a></li>
+            <li class="list-element"><a href="#" class="text">Comunicazione</a></li>
         </ul>
+    </div>
+
+    <div class="hero-banner-component">
+        <ul class="accordion-menu">
+            <li><a class="accordion-text" href="#" >Home</a></li>
+            <span class="accordion-text">/</span>
+            <li><a class="accordion-text" href="#">Ambiti di intervento</a></li>
+            <span class="accordion-text">/</span></li>
+            <li><a class="accordion-text" href="#">Identità digitale</a></li>
+        </ul>
+        <div class="container">
+            <div class="textbox">
+                <div class="title">Identità digitale</div>
+                <div class="description">L’Identità digitale rappresenta <strong>lo strumento che permette ai cittadini di
+                    identificarsi in modo univoco e accedere a tutti i servizi digitali della Pubblica 
+                    Amministrazione e a quelli dei privati aderenti.</strong><br><br>Gli strumenti di identificazione
+                    per accedere ai servizi online sono SPID (Sistema Pubblico di Identità Digitale), CIE 
+                    (Carta d’Identità Elettronica) e CNS (Carta Nazionale dei Servizi).
+                </div>
+            </div>
+            <div class="img-container">
+                <img class="image" src="/src/assets/fingerprint.png" alt="fingerprint">
+            </div>
+        </div>
     </div>
 
     <div class="main">
 
-        <div class="section-1">
-            <ul class="menu">
-                <li><a href="#" class="text">Home</a></li>
-                <span class="text">/</span>
-                <li><a href="#" class="text">Ambiti di intervento</a></li>
-                <span class="text">/</span></li>
-                <li><span href="#" class="text">Identità digitale</span></li>
-            </ul>
-            <div class="container">
-                <div class="textbox">
-                    <div class="title">Identità digitale</div>
-                    <div class="text">L’Identità digitale rappresenta <strong>lo strumento che permette ai cittadini di
-                        identificarsi in modo univoco e accedere a tutti i servizi digitali della Pubblica 
-                        Amministrazione e a quelli dei privati aderenti.</strong><br><br>Gli strumenti di identificazione
-                        per accedere ai servizi online sono SPID (Sistema Pubblico di Identità Digitale), CIE 
-                        (Carta d’Identità Elettronica) e CNS (Carta Nazionale dei Servizi).
-                    </div>
-                </div>
-                <div class="img-container">
-                    <img src="" alt="">
-                </div>
+        <div class="ordered-list-component">
+            <div class="textbox">
+                <div class="title">Strategie</div>
+                <div class="text">Nel giro di pochi anni si è passati dalla proliferazione di servizi digitali accessibili
+                    tramite credenziali proprietarie diverse per ogni Amministrazione a servizi digitali sempre più 
+                    omogenei e accessibili tramite un'identità unica. Ecco i prossimi passi.</div>
             </div>
-        </div>
-
-        <div class="section-2">
-            <div class="title">Strategie</div>
-            <div class="text">Nel giro di pochi anni si è passati dalla proliferazione di servizi digitali accessibili
-                tramite credenziali proprietarie diverse per ogni Amministrazione a servizi digitali sempre più 
-                omogenei e accessibili tramite un'identità unica. Ecco i prossimi passi.</div>
             <ol class="list">
-                <li class="list-element">
-                    <div class="title-list">Decennio digitale europeo</div>
-                    <div class="text-list">Le attività di AgID si inseriscono all’interno del <a href="#">Programma strategico 
+                <li class="list-item">
+                    <div class="list-title">Decennio digitale europeo</div>
+                    <div class="list-description">Le attività di AgID si inseriscono all’interno del <a href="#">Programma strategico 
                         per il decennio digitale</a>, che fissa, a livello europeo, traguardi e obiettivi concreti per il 2030. 
                         Il Programma istituisce un <strong>ciclo di cooperazione annuale</strong> per conseguire gli obiettivi e i 
                         traguardi comuni, basato su un meccanismo di collaborazione annuale che coinvolge la 
                         Commissione Europea e gli Stati membri.</div>
                 </li>
-                <li class="list-element">
-                    <div class="title-list">La strategia Italia Digitale 2026</div>
-                    <div class="text-list">Unica, gratuita, facile da usare: in linea con la <a href="#">Strategia Italia digitale 2026</a>, 
+                <li class="list-item">
+                    <div class="list-title">La strategia Italia Digitale 2026</div>
+                    <div class="list-description">Unica, gratuita, facile da usare: in linea con la <a href="#">Strategia Italia digitale 2026</a>, 
                         ogni cittadino deve disporre di <strong>un’identità digitale che gli permetta di identificarsi in maniera 
                         sicura</strong> e di <strong> a tutti i servizi digitali pubblici e privati</strong> in Italia e in Europa. 
                         <strong>AgID coordina il sistema</strong> pubblico dell’identità digitale – SPID.</div>
@@ -124,76 +127,83 @@
             </ol>
         </div>
 
-        <div class="section-3">
-            <div class="title">Strumenti</div>
-            <div class="text">AgID promuove strumenti e piattaforme innovative per l’adozione di sistemi di identificazione 
-                digitali da parte delle Pubbliche Amministrazioni.</div>
-                <div>
-                    <div class="box-container">
-                        <div class="box">
-                            <div><a href="#" class="title-box">SPID</a></div>
-                            <div class="text-box">Il Sistema Pubblico di Identità Digitale permette ai cittadini di accedere
-                                ai servizi online delle Pubbliche Amministrazioni e dei soggetti privati aderenti con un'unica
-                                identità digitale.Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </div>
-                        </div>
-                        <div class="box">
-                            <div><a href="#" class="title-box">eIDAS</a></div>
-                            <div class="text-box">Il Regolamento rappresenta la base normativa a livello comunitario per
-                                i servizi fiduciari e i mezzi di identificazione elettronica degli stati membri dell’Unione
-                                europea.</div>
-                        </div>
-                    </div>
+        <div class="description-cards-component">
+            <div class="textbox">
+                <div class="title">Strumenti</div>
+                <div class="description">AgID promuove strumenti e piattaforme innovative per l’adozione di sistemi di identificazione 
+                    digitali da parte delle Pubbliche Amministrazioni.</div>
+            </div>
+            <div class="cards-container">
+                <div class="item">
+                    <div><a class="card-title" href="#">SPID</a></div>
+                    <div class="card-description">Il Sistema Pubblico di Identità Digitale permette ai cittadini di accedere
+                        ai servizi online delle Pubbliche Amministrazioni e dei soggetti privati aderenti con un'unica
+                        identità digitale.</div>
                 </div>
+                <div class="item">
+                    <div><a class="card-title" href="#">eIDAS</a></div>
+                    <div class="card-description">Il Regolamento rappresenta la base normativa a livello comunitario per
+                        i servizi fiduciari e i mezzi di identificazione elettronica degli stati membri dell’Unione
+                        europea.</div>
+                </div>
+            </div>
         </div>
 
-        <div class="section-4">
-            <div class="element">
-                <div class="icon">
-                    <img src="/src/assets/arrow.svg" class="image">
-                </div>
+        <div class="description-box-component">
+            <div class="item">
                 <div class="textbox">
-                    <div class="title-element">
-                        <a href #>Portale SPID</a>
-                    </div>
-                    <div class="text-element">
+                    <a class="title" href="#">Portale SPID</a>
+                    <div class="description">
                         Con SPID accedere ai servizi della Pubblica Amministrazione è semplice 
                         e veloce: <a href=#>scopri come ottenerlo</a>
                     </div>
-                    <hr class="line">
                 </div>
             </div>
-            <div class="element">
-                <div class="icon">
-                    <img src="/src/assets/arrow.svg" class="image">
-                </div>
+            <div class="item">
                 <div class="textbox">
-                    <div class="title-element">
-                        <a href #>Avanzamento della Trasformazione Digitale</a>
-                    </div>
-                    <div class="text-element">
+                    <a class="title" href="#">Avanzamento della Trasformazione Digitale</a>
+                    <div class="description">
                         Sul sito dedicato, puoi consultare in ogni momento i dati di 
                         monitoraggio dei progetti strategici di trasformazione digitale, 
-                        per scoprire il loro stato di avanzamento. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+                        per scoprire il loro stato di avanzamento. 
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="section-5">
-            <div class="title">Risorse utili</div>
-            <hr class="line">
+        <div class="dropdown-simple-text-component">
+            <div class="title-component">Risorse utili</div>
             <div class="textbox">
-                <div class="title-box-container">
-                    <div class="title-box">Collegamenti</div>
-                    <div class="icon"></div>
-                </div>
-                <div class="text-box">
+                <div class="title">Collegamenti</div>
+                <div class="description">
                     La <a href=#>Carta Nazionale dei Servizi</a> e la <a href=#>Carta d’Identità Elettronica</a> 
                     sono due ulteriori strumenti di identificazione per accedere ai 
                     servizi delle Pubbliche Amministrazioni.
                 </div>
             </div>
-            <hr class="line">
+        </div>
+
+        <div class="dropdown-text-image-component">
+            <div class="title-component">Documenti e normative</div>
+            <a class="animated-link" href=#>SCOPRI TUTTI I DOCUMENTI</a>
+            <div class="banner">
+                <div class="title">Documenti correlati</div>
+                <div class="item">
+                    <div class="wrapper">
+                        <ul class="tags">
+                            <li class="tag-text">Determinazioni direttoriali</li>
+                            <li class="tag-text">Identità digitale</li>
+                            <li class="tag-text">CNS</li>
+                        </ul>
+                        <a class="text" href="#">Determinazione Direttoriale</a>
+                        <ul class="info">
+                            <li class="info-text">PDF</li>
+                            <li class="info-text">1,0 MB</li>
+                            <li class="info-text">08/05/2024</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>

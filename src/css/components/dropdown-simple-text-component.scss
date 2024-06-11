@@ -1,0 +1,51 @@
+.dropdown-simple-text-component {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .title-component {
+        font-size: 56px;
+    }
+
+    .textbox {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .title {
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .title::after {
+            content: '';
+            display: inline-block;
+            background-image: url(/src/assets/dropdown-arrow.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            margin: 0 20px;
+        }
+    }
+
+    // LA LINEA IN BASSO RISULTA PIù SPESSA DI QUELLA IN ALTO SE IMPOSTATE A 1PX
+    .textbox::before, .textbox::after {
+        content: '';
+        display: block;
+        background-color: black;
+        height: .5px;
+    }
+}
+
+@media (max-width: 992px) {
+    .dropdown-simple-text-component {
+        gap: 20px;
+
+        .textbox {
+            gap: 20px;
+        }
+    }
+}
