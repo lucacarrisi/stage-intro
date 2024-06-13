@@ -1,14 +1,10 @@
 .ordered-list-component {
-    display: flex;
-    flex-direction: column;
 
     .textbox {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
 
         .title {
             font-size: 56px;
+            margin-bottom: 20px;
         }
 
         .text {
@@ -18,7 +14,6 @@
 
     .list {
         
-        // DA ALLINEARE CON IL TITOLO
         li::marker { 
             color:#003366;
             font-size: 38px;
@@ -38,5 +33,18 @@
                 font-size: 18px;
             }
         }
+    }
+}
+
+@media (max-width: 992px) {
+    .ordered-list-component {
+
+        .textbox {
+            
+            .title {
+                font-size: 46px;
+                line-height: 50px;
+            }
+        } 
     }
 }
