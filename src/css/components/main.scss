@@ -4,15 +4,12 @@
     padding: 90px;
     gap: 90px;
     
-    a:link {
+    a {
         text-decoration-line:underline;
         color: #006edb;
         text-decoration: underline;
     }
-    a:visited {
-        color: #006edb;
-        text-decoration: underline;
-    }
+
     a:hover {
         text-decoration: none;
     }  

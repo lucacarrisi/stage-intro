@@ -1,11 +1,4 @@
 /*@import "./components/second-task.scss";*/
 /*@import "./components/first-task.scss";*/
-@import "./components/body.scss";
-@import "./components/header.scss";
-@import "./components/main.scss";
-@import "./components/hero-banner-component.scss";
-@import "./components/ordered-list-component.scss";
-@import "./components/description-cards-component.scss";
-@import "./components/description-box-component.scss";
-@import "./components/dropdown-simple-text-component.scss";
-@import "./components/dropdown-text-image-component.scss";
+@import "./components/index.scss";
+@import "./utils/index.scss";

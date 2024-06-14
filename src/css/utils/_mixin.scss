@@ -1,0 +1,28 @@
+$breakpoints: (
+    'small':  ( max-width:  767px ),
+    'medium': ( max-width:  1024px ),
+) !default;
+
+$values : (
+    'md': 767px,
+    'lg': 992px
+);
+
+@mixin breakpoint($breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+        @content;
+    }
+}
+
+@mixin breakpoint-between($firstValue, $secondValue) {
+    @media (min-width: inspect(map-get($values, $firstValue))) and (max-width: inspect(map-get($values, $secondValue))) {
+        @content;
+    }
+}
+
+@mixin titleStyle{
+    color: violet;
+    font-size: 80px;
+    line-height: 100px;
+    text-decoration: underline;
+}

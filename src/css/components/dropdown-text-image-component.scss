@@ -1,3 +1,4 @@
+@import "../utils/animations";
 .dropdown-text-image-component {
 
     .title-component {
@@ -21,14 +22,18 @@
         height: 20px;
         margin-left: 15px;
     }
-    
-    // DA ANIMARE
+
     .animated-link:hover::after {
-        transform: translateX(15px);
-        //transition: transform 1s infinite;
-        //transition: margin-left 1s ease-in-out;
-        //transition: width .5s ease-in-out;
-        //width: 10px;
+        animation: linkSteps 1s ease-in-out infinite;
+    }
+
+    .new-link{
+        @extend .animated-link;
+        &:hover:after{
+            animation: link 1s ease-in-out infinite;
+            margin-left: 80px;
+        }
+
     }
 
     .banner {

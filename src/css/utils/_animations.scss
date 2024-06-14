@@ -1,0 +1,25 @@
+@keyframes link {
+    from {
+        transform: translateX(15px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes linkSteps {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(15px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}

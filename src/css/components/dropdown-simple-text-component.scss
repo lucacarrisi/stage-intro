@@ -6,8 +6,8 @@
     }
 
     .textbox {
-        border-top: .5px solid black;
-        border-bottom: .5px solid black;
+        border-top: .5px solid var(--black);
+        border-bottom: .5px solid var(--black);
         position: relative;
 
         .input {

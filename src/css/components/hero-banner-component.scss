@@ -1,8 +1,9 @@
+@import "../utils/mixin";
 .hero-banner-component {
     display: flex;
     flex-direction: column;
     min-height: 500px;
-    background-color: #003366;
+    background-color: var(--blue);
     margin: 0;
     padding: 0 90px;
 
@@ -14,9 +15,9 @@
         list-style-type:none;
 
         .accordion-text {
-            color: white;
+            color: var(--white);
             font-size: 16px;
-            padding: 0px 20px 0px 0px;
+            padding: 0 20px 0 0;
             font-weight: bold;
         }
     }
@@ -35,7 +36,7 @@
             margin: auto 0;
 
             .title {
-                font-size: 60px;
+                @include titleStyle();
                 margin: 0 0 20px 0;
             }
             .description {
@@ -56,14 +57,13 @@
             }
         }
     }
-}
 
-@media (max-width:992px) {
-    .hero-banner-component {
+    @include breakpoint('medium'){
         padding: 0 30px;
+        background-color: red;
 
         .accordion-menu {
-    
+
             .accordion-text {
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
@@ -74,7 +74,7 @@
 
         .container {
             flex-wrap: wrap;
-            
+
             .textbox {
                 max-width: 100%;
 
@@ -90,10 +90,18 @@
                 .image {
                     max-height: 300px;
                     max-width: 400px;
-                    width: 100%;  
-                    margin: 0 auto;       
+                    width: 100%;
+                    margin: 0 auto;
                 }
             }
         }
+    }
+
+    @include breakpoint('small'){
+        background-color: black;
+    }
+
+    @include breakpoint-between('md', 'lg'){
+        background-color: green;
     }
 }
