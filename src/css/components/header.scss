@@ -1,5 +1,7 @@
+@import "../utils/mixin";
+
 .header {
-    background-color: #006edb;
+    background-color: var(--blue-default);
     padding: 30px 90px 20px 90px;
     margin:0;
 
@@ -20,10 +22,9 @@
             align-items: center;
 
             .text {
-                color: white;
+                color: var(--white);
                 font-weight: 700;
                 margin: 20px;
-                font-family: Titillium Web;
             }
 
             .button {
@@ -31,6 +32,7 @@
                 height: 50px;
                 border: none;
                 border-radius: 100%;
+                cursor: pointer;
 
                 .image{
                     width: 25px;  
@@ -53,8 +55,8 @@
         }
         
         .text {
-            color: white;
-            font-size: 18px;
+            color: var(--white);
+            font-size: var(--text-default);
             text-decoration: none;
 
             &::after {
@@ -64,7 +66,7 @@
                 height: 1px;
                 left: 0;
                 position: absolute;
-                background: white;
+                background: var(--white);
                 transition: width .3s ease-in-out;
                 width: 0;
             }
@@ -74,10 +76,7 @@
             }
         }    
     }
-}
-
-@media (max-width: 992px) {
-    .header {
+    @include breakpoint('medium'){
         padding: 30px 30px 20px 30px;
 
         .container-first-line {
@@ -113,5 +112,6 @@
             column-gap: 20px;
             flex-wrap: wrap;
         }
+    
     }
 }

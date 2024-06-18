@@ -1,5 +1,7 @@
+@import "../utils/mixin";
+
 .description-box-component {
-    background-color: #f0f6fc;
+    background-color: var(--white-blue);
     padding: 40px;
 
     .item {
@@ -11,16 +13,16 @@
         .textbox {
             margin-bottom: 40px;
             width: 100%;
-            border-bottom: .5px solid black;
+            border-bottom: .5px solid var(--black);
 
             .title {
-                color:#006edb;
-                font-size: 24px;
+                color: var(--blue-default);
+                font-size: var(--text-m);
                 font-weight: 900;
             }
 
             .description {
-                font-size: 18px;
+                font-size: var(--text-default);
                 margin: 20px 0 40px 0;
             }
         }
@@ -47,10 +49,8 @@
             height: 40px;
         } 
     }
-}
 
-@media (max-width: 992px) {
-    .description-box-component {
+    @include breakpoint('medium'){
         padding: 20px;
         
         .item {

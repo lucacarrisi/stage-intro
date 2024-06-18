@@ -1,7 +1,10 @@
+@import "../utils/mixin";
+@import "../utils/animations";
+
 .dropdown-simple-text-component {
 
     .title-component {
-        font-size: 56px;
+        font-size: var(--text-xl);
         margin-bottom: 30px;
     }
 
@@ -18,13 +21,13 @@
             }
             &:checked + .title {
                 .chevron::after {
-                    transform: rotate(180deg)
+                    transform: rotate(180deg);
                 }
-            }
+            }   
         }
 
         .title {
-            font-size: 24px;
+            font-size: var(--text-m);
             margin: 30px 0;
             width: 100%;
             height: 100%;
@@ -32,6 +35,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            cursor: pointer;
 
             .chevron {
                             
@@ -43,24 +47,22 @@
                     background-repeat: no-repeat;
                     width: 20px;
                     height: 20px;
-                    left:20px;
+                    left: 20px;
                     margin: 20px;
                 }
             }
         }
 
         .description {
-            display:none;
+            display: none;
             margin-bottom: 30px;
         }
     }
-}
 
-@media (max-width: 992px) {
-    .dropdown-simple-text-component {
+    @include breakpoint('medium'){
 
         .title-component {
-            font-size: 46px;
+            font-size: var(--text-xl-mobile);
             margin-bottom: 20px;
             line-height: 50px;
         }

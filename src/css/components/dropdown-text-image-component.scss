@@ -1,8 +1,10 @@
+@import "../utils/mixin";
 @import "../utils/animations";
+
 .dropdown-text-image-component {
 
     .title-component {
-        font-size: 56px;
+        font-size: var(--text-xl);
         margin-bottom: 30px;
     }
 
@@ -37,8 +39,8 @@
     }
 
     .banner {
-        border-top: .5px solid black;
-        border-bottom: .5px solid black;
+        border-top: .5px solid var(--black);
+        border-bottom: .5px solid var(--black);
 
         .input {
             display: none;
@@ -54,7 +56,7 @@
         }
 
         .title {
-            font-size: 24px;
+            font-size: var(--text-m);
             margin: 30px 0;
             width: 100%;
             height: 100%;
@@ -62,6 +64,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            cursor: pointer;
 
             .chevron {
                 
@@ -92,10 +95,10 @@
                     padding: 0;
                     
                     .tag-text {
-                        font-size: 14px;
+                        font-size: var(--text-xs);
                         font-weight: 900;
-                        color: #5c6f82;
-                        border: .5px solid #5c6f82;
+                        color: var(--grayblue);
+                        border: .5px solid var(--gray);
                         border-radius: 5px;
                         list-style-type: none;
                         padding: 2px 20px;
@@ -103,8 +106,8 @@
                 }
 
                 .text {
-                    font-size: 28px;
-                    color: black;
+                    font-size: var(--text-ml);
+                    color: var(--black);
                     text-decoration-thickness: 1px;
                     text-underline-offset: 3px;
                 }
@@ -117,9 +120,9 @@
                     flex-wrap: wrap;
 
                     .info-text {
-                        font-family: 'Roboto';
-                        font-size: 16px;
-                        color: #2f475e;
+                        font-family: var(--font-family-alt);
+                        font-size: var(--text-s);
+                        color: var(--grayblue);
                         list-style-type: none;
                     }
                 }
@@ -147,13 +150,11 @@
             margin: 70px 100px;
         }
     }
-}
 
-@media (max-width: 992px) {
-    .dropdown-text-image-component {
+    @include breakpoint('medium'){
 
         .title-component {
-            font-size: 46px;
+            font-size: var(--text-xl-mobile);
             margin: 20px 0;
             line-height: 50px;
         }

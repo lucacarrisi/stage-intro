@@ -12,6 +12,7 @@
 </head>
 
 <!-- LIST 1
+ <body>
     <div class="body">
         <ul class="list" >
             <li class="title">
@@ -25,9 +26,11 @@
             <li class="evenLine">Haircut</li>           
         </ul>
     </div>
+</body>
 -->
 
 <!-- LIST 2
+ <body>
     <div class="body">
         <div class="container" >
             <div class="title">
@@ -53,7 +56,9 @@
                      
         </div>
     </div>
+<body>
 -->
+
 <body>
 
     <div class="header">
@@ -63,7 +68,7 @@
             </div>    
             <div class="search">
                 <div class="text">Cerca nel sito</div>
-                <button class="button"><img src="src/assets/search.svg" class="image"></button>
+                <button type="button" class="button"><img src="src/assets/search.svg" class="image"></button>
             </div>
         </div>
         <ul class="navbar">
@@ -98,6 +103,200 @@
             </div>
         </div>
     </div>
+
+
+    <!-- COMPONENTE scss:"radio-component-prova1 --
+    <div class="radio-component">
+        <div class="title-component">Cosa fa l'Agenzia</div>
+        <div class="items-container">
+            <div class="labels-container">
+                <label class="label" for="definisce">Definisce strategie</label>
+                <label class="label" for="promuove">Promuove competenze digitali</label>
+                <label class="label" for="monitora">Monitora e vigila</label>
+            </div>
+            <div class="item">
+                <input type="radio" id="definisce" name="agenzia" checked>
+                <div class="content">
+                    <div class="description">
+                        AgID sviluppa strategie e piani per trasformare il Paese, rendendolo più digitale.
+                    </div>
+                    <a class="animated-link" href=#>APPROFONDISCI</a>
+                    <div class="textbox">
+                        <div class="text">
+                            <a class="title" href="#">Piano Triennale per l'informatica</a>
+                            <div class="description">
+                                Il <strong>Piano Triennale per l’informatica nella Pubblica Amministrazione</strong> promuove 
+                                la trasformazione digitale del Paese fornendo indicazioni operative, 
+                                obiettivi e risultati attesi.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <input type="radio" id="promuove" name="agenzia">
+                <div class="content">
+                    <div class="description">
+                        AgID promuove la diffusione di competenze digitali per la Pubblica Amministrazione, le imprese e i cittadini.
+                    </div>
+                    <a class="animated-link" href=#>APPROFONDISCI</a>
+                    <div class="textbox">
+                        <div class="text">
+                            <a class="title" href="#">Piano Triennale per l'informatica</a>
+                            <div class="description">
+                                Il <strong>Piano Triennale per l’informatica nella Pubblica Amministrazione</strong> promuove 
+                                la trasformazione digitale del Paese fornendo indicazioni operative, 
+                                obiettivi e risultati attesi.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <input type="radio" id="monitora" name="agenzia">
+                <div class="content">
+                    <div class="description">
+                        AgID monitora l’avanzamento della trasformazione digitale del Paese, vigilando sul rispetto delle norme in materia di digitalizzazione.
+                    </div>
+                    <a class="animated-link" href=#>APPROFONDISCI</a>
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="text-container">
+                                <div class="card-title">SPID</div>
+                                <span class="card-num">1.1</span>
+                                <span class="card-unit"> mld</span>
+                                <div class="card-description">Accessi effettuati nel 2023</div>
+                            </div>        
+                        </div>
+                        <div class="card">
+                            <div class="text-container">
+                                <div class="card-title">SANZIONI IRROGATE</div>
+                                <span class="card-num">480</span>
+                                <span class="card-description"> mila euro</span>
+                                <div class="card-description">ai soggetti vigilati nel 2023</div>
+                            </div>        
+                        </div>
+                        <div class="card">
+                            <div class="text-container">
+                                <div class="card-title">CAMPAGNE MALWARE</div>
+                                <span class="card-num">1.7</span>
+                                <span class="card-unit"> mgl</span>
+                                <div class="card-description">Rilevate nel 2023</div>
+                            </div>        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    !-- COMPONENTE scss:"radio-component-prova1 -->
+
+    <!-- COMPONENTE scss:"radio-component-prova2 -->
+    <div class="radio-component">
+        <div class="title-component">Cosa fa l'Agenzia</div>
+        <div class="container">
+
+            <div class="items-container">
+
+                <input type="radio" id="definisce" name="agenzia" checked>
+                <label class="label" for="definisce">Definisce strategie</label>
+
+                <input type="radio" id="promuove" name="agenzia">
+                <label class="label" for="promuove">Promuove competenze digitali</label>
+
+                <input type="radio" id="monitora" name="agenzia">
+                <label class="label" for="monitora">Monitora e vigila</label>
+
+                <div class="content">
+
+                    <div class="item" id="c1">
+                        <div class="description">
+                            AgID sviluppa strategie e piani per trasformare il Paese, rendendolo più digitale.
+                        </div>
+                        <a class="animated-link" href=#>APPROFONDISCI</a>
+                        <div class="textbox">
+                            <div class="text">
+                                <a class="title" href="#">Piano Triennale per l'informatica</a>
+                                <div class="description">
+                                    Il <strong>Piano Triennale per l’informatica nella Pubblica Amministrazione</strong> promuove 
+                                    la trasformazione digitale del Paese fornendo indicazioni operative, 
+                                    obiettivi e risultati attesi.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" id="c2">
+                        <div class="description">
+                            AgID promuove la diffusione di competenze digitali per la Pubblica Amministrazione, le imprese e i cittadini.
+                        </div>
+                        <a class="animated-link" href=#>APPROFONDISCI</a>
+                        <div class="textbox">
+                            <div class="text">
+                                <a class="title" href="#">Competenze digitali di base</a>
+                                <div class="description">
+                                    Per modernizzare il Paese, realizzare la cittadinanza digitale e garantire l’inclusione digitale.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="textbox">
+                            <div class="text">
+                                <a class="title" href="#">Competenze specialistiche</a>
+                                <div class="description">
+                                    Per la crescita digitale della Pubblica Amministrazione e delle imprese.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="textbox">
+                            <div class="text">
+                                <a class="title" href="#">Competenze di e-leadership</a>
+                                <div class="description">
+                                    Per gestire il cambiamento organizzativo e l’innovazione.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item" id="c3">
+                        <div class="description">
+                            AgID monitora l’avanzamento della trasformazione digitale del Paese, vigilando sul rispetto delle norme in materia di digitalizzazione.
+                        </div>
+                        <a class="animated-link" href=#>APPROFONDISCI</a>
+                        <div class="cards-container">
+                            <div class="card">
+                                <div class="text-container">
+                                    <div class="card-title">SPID</div>
+                                    <span class="card-num">1.1</span>
+                                    <span class="card-unit"> mld</span>
+                                    <div class="card-description">Accessi effettuati nel 2023</div>
+                                </div>        
+                            </div>
+                            <div class="card">
+                                <div class="text-container">
+                                    <div class="card-title">SANZIONI IRROGATE</div>
+                                    <span class="card-num">480</span>
+                                    <span class="card-description"> mila euro</span>
+                                    <div class="card-description">ai soggetti vigilati nel 2023</div>
+                                </div>        
+                            </div>
+                            <div class="card">
+                                <div class="text-container">
+                                    <div class="card-title">CAMPAGNE MALWARE</div>
+                                    <span class="card-num">1.7</span>
+                                    <span class="card-unit"> mgl</span>
+                                    <div class="card-description">Rilevate nel 2023</div>
+                                </div>        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- COMPONENTE scss:"radio-component-prova2 -->
+
 
     <div class="main">
 
@@ -222,5 +421,6 @@
         </div>
 
     </div>
+
 </body>
 </html>

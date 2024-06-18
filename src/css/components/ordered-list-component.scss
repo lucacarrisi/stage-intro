@@ -1,48 +1,47 @@
+@import "../utils/mixin";
+
 .ordered-list-component {
 
     .textbox {
 
         .title {
-            font-size: 56px;
+            font-size: var(--text-xl);
             margin-bottom: 20px;
         }
 
         .text {
-            font-size: 18px;
+            font-size: var(--text-default);
         }
     }
 
     .list {
         
         li::marker { 
-            color:#003366;
-            font-size: 38px;
-            font-family: Titillium Web;
+            color: var(--blue);
+            font-size: var(--text-marker);
+            font-family: var(--font-family);
             font-weight: 900;
         }
 
         .list-item {
             
             .list-title {
-                font-size: 24px;
+                font-size: var(--text-m);
                 font-weight: 700;
                 margin: 30px 0;
             }
 
             .list-description {
-                font-size: 18px;
+                font-size: var(--text-default);
             }
         }
     }
-}
-
-@media (max-width: 992px) {
-    .ordered-list-component {
-
+    
+    @include breakpoint('medium'){
         .textbox {
             
             .title {
-                font-size: 46px;
+                font-size: var(--text-xl-mobile);
                 line-height: 50px;
             }
         } 

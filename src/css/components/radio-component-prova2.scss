@@ -1,0 +1,260 @@
+@import "../utils/mixin";
+
+.radio-component {
+    background-color: var(--white-blue);
+    margin: 0;
+    padding: 90px;
+
+    a {
+        text-decoration-line:underline;
+        color: var(--blue-default);
+        text-decoration: underline;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }  
+
+    .title-component {
+        font-size: var(--text-xl);
+        margin-bottom: 40px;
+    }
+
+    .container {
+        position: relative;
+        background-color: var(--white-blue);
+
+        input {
+                display: none;
+    
+                &:checked + .label {
+                    font-weight: 700; 
+                    color: var(--blue);
+                    border-bottom: 1.5px solid var(--blue);
+                }
+            }
+            
+            #definisce:checked ~ .content {
+                #c1 {
+                display: block;
+                animation: entrance .3s ease-in-out;
+                }
+            }
+    
+            #promuove:checked ~ .content {
+                #c2 {
+                display: block;
+                animation: entrance .3s ease-in-out;
+                }
+            }
+    
+            #monitora:checked ~ .content {
+                #c3 {
+                display: block;
+                animation: entrance .3s ease-in-out;
+                }
+            }
+
+        .items-container {
+            width: 100%;
+            text-align: center;
+            
+            .label {
+                color: var(--blue-default);
+                border-bottom: 1.5px solid var(--light-gray);
+                width: calc(100% / 3);
+                text-align: center;
+                font-size: var(--text-m);
+                cursor: pointer;
+                padding: 10px 60px;
+                white-space: nowrap;
+                display: inline;
+            }    
+
+            .content {
+                text-align: left;
+
+                .item {
+                    display: none;
+                    margin: 0;
+                    padding: 0 90px;
+                    
+                    .description {
+                        font-size: var(--text-default);
+                        margin: 50px 0 20px 0;
+                    }
+            
+                    .animated-link {
+                        font-weight: 700;
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 30px;
+                        color: var(--blue-default);
+            
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+            
+                    .animated-link::after {
+                        content: '';
+                        display: inline-block;
+                        background-image: url(/src/assets/link-arrow.svg);
+                        background-size: contain;
+                        width: 20px;
+                        height: 20px;
+                        margin-left: 15px;
+                    }
+            
+                    .animated-link:hover::after {
+                        animation: linkSteps 1s ease-in-out infinite;
+                    }
+            
+                    .textbox {
+                        padding: 0;
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 20px;
+                        margin: 40px 0 0 120px;
+
+                        .text {
+                            width: 100%;
+                            border-bottom: 1px solid var(--black);
+            
+                            .title {
+                                color: var(--blue-default);
+                                font-size: var(--text-m);
+                                font-weight: 900;
+                            }
+            
+                            .description {
+                                font-size: var(--text-default);
+                                margin: 20px 0 40px 0;
+                            }
+                        }
+                        
+                        &:last-child {
+            
+                            .text {
+                                border: none;
+                                margin-bottom: 40px;
+            
+                                .description {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+            
+                        &::before {
+                            content: "";
+                            display: block;
+                            background-image: url(/src/assets/arrow.svg);
+                            background-size: cover;
+                            max-width: 40px;
+                            min-width: 40px;
+                            height: 40px;
+                        } 
+                    }
+
+                    .cards-container {
+                        display: flex;
+                        width: 100%;
+                        flex-wrap: wrap;
+                        gap: 24px;
+                
+                        .card {
+                            max-width: 400px;
+                            min-width: 400px;
+                            display: flex;
+
+                            .text-container {
+                                width: 100%;
+                                padding: 35px 25px;
+                                background-color: var(--white);
+                                color: var(--dark-blue); 
+                
+                                .card-title {
+                                    font-size: var(--text-l-mobile); 
+                                    margin-bottom: 30px;                
+                                }
+
+                                .card-num {
+                                    font-size: var(--text-xxl);
+                                    line-height: 1;
+                                }
+
+                                .card-unit {
+                                    font-size: var(--text-l);
+                                }
+                                
+                                .card-description {
+                                    font-size: var(--text-default);
+                                }
+                            }
+                        }  
+                    }
+                }
+            }
+        }
+    }
+
+    @include breakpoint('medium'){
+        padding: 30px;
+
+        .title-component {
+            font-size: var(--text-xl-mobile);
+            margin-bottom: 20px;
+        }
+
+        .container {
+
+            .items-container {
+                
+                .label {
+                    display: inline-block;
+                    white-space: unset;
+                    font-size: var(--text-default);
+                    line-height: 20px;
+                }
+
+                .content {
+
+                    .item {
+                    padding: 0;
+
+                        .description {
+                            margin: 40px 0 20px 0;
+                        }
+
+                        .textbox {
+                            margin: 30px 0 0 0;
+                        }
+
+                        .cards-container {
+                            display:flex;
+                            width: 100%;
+                            flex-wrap: wrap;
+
+                            .card {
+                                min-width: 100%;
+                                max-width: 100%;
+
+                                .text-container {
+                                    padding: 25px;
+
+                                    .card-title {
+                                        margin-bottom: 20px;  
+                                    }
+                                    
+                                    .card-num {
+                                        font-size: var(--text-xl);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
