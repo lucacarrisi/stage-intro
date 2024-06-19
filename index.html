@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
     <link rel="stylesheet" href="./src/css/main.css">
+    <script type="module" src="./src/js/main.js"></script>
 </head>
 
 <!-- LIST 1
@@ -61,62 +62,165 @@
 
 <body>
 
-    <div class="header">
-        <div class="container-first-line">
-            <div class="logo">
-                <a href="https://www.agid.gov.it/it/ambiti-intervento/identita-digitale" target="_blank"><img src="src/assets/logo.svg" class="image"></a>
-            </div>    
-            <div class="search">
-                <div class="text">Cerca nel sito</div>
-                <button type="button" class="button"><img src="src/assets/search.svg" class="image"></button>
-            </div>
+<div class="header">
+    <div class="container-first-line">
+        <div class="logo">
+            <a href="https://www.agid.gov.it/it/ambiti-intervento/identita-digitale" target="_blank"><img
+                src="src/assets/logo.svg" class="image"></a>
         </div>
-        <ul class="navbar">
-            <li class="list-element"><a href="#" class="text">L'Agenzia</a></li>
-            <li class="list-element"><a href="#" class="text">Ambiti di intervento</a></li>
-            <li class="list-element"><a href="#" class="text">Piattaforme e tecnologie</a></li>
-            <li class="list-element"><a href="#" class="text">Linee guida</a></li>
-            <li class="list-element"><a href="#" class="text">Comunicazione</a></li>
-        </ul>
+        <div class="search">
+            <div class="text">Cerca nel sito</div>
+            <button type="button" class="button"><img src="src/assets/search.svg" class="image"></button>
+        </div>
     </div>
 
-    <div class="hero-banner-component">
-        <ul class="accordion-menu">
-            <li><a class="accordion-text" href="#" >Home</a></li>
-            <span class="accordion-text">/</span>
-            <li><a class="accordion-text" href="#">Ambiti di intervento</a></li>
-            <span class="accordion-text">/</span></li>
-            <li><a class="accordion-text" href="#">Identità digitale</a></li>
-        </ul>
-        <div class="container">
-            <div class="textbox">
-                <div class="title">Identità digitale</div>
-                <div class="description">L’Identità digitale rappresenta <strong>lo strumento che permette ai cittadini di
-                    identificarsi in modo univoco e accedere a tutti i servizi digitali della Pubblica 
-                    Amministrazione e a quelli dei privati aderenti.</strong><br><br>Gli strumenti di identificazione
-                    per accedere ai servizi online sono SPID (Sistema Pubblico di Identità Digitale), CIE 
-                    (Carta d’Identità Elettronica) e CNS (Carta Nazionale dei Servizi).
+    <ul class="navbar">
+        <li class="list-element"><a href="#" class="text">L'Agenzia</a></li>
+        <li class="list-element"><a href="#" class="text">Ambiti di intervento</a></li>
+        <li class="list-element"><a href="#" class="text">Piattaforme e tecnologie</a></li>
+        <li class="list-element"><a href="#" class="text">Linee guida</a></li>
+        <li class="list-element"><a href="#" class="text">Comunicazione</a></li>
+    </ul>
+
+</div>
+
+<div class="hero-banner-component">
+    <ul class="accordion-menu">
+        <li><a class="accordion-text" href="#">Home</a></li>
+        <span class="accordion-text">/</span>
+        <li><a class="accordion-text" href="#">Ambiti di intervento</a></li>
+        <span class="accordion-text">/</span></li>
+        <li><a class="accordion-text" href="#">Identità digitale</a></li>
+    </ul>
+    <div class="container">
+        <div class="textbox">
+            <div class="title">Identità digitale</div>
+            <div class="description">L’Identità digitale rappresenta <strong>lo strumento che permette ai cittadini di
+                identificarsi in modo univoco e accedere a tutti i servizi digitali della Pubblica
+                Amministrazione e a quelli dei privati aderenti.</strong><br><br>Gli strumenti di identificazione
+                per accedere ai servizi online sono SPID (Sistema Pubblico di Identità Digitale), CIE
+                (Carta d’Identità Elettronica) e CNS (Carta Nazionale dei Servizi).
+            </div>
+        </div>
+        <div class="img-container">
+            <img class="image" src="/src/assets/fingerprint.png" alt="fingerprint">
+        </div>
+    </div>
+</div>
+
+
+<!-- COMPONENTE scss:"radio-component-prova1 --
+<div class="radio-component">
+    <div class="title-component">Cosa fa l'Agenzia</div>
+    <div class="items-container">
+        <div class="labels-container">
+            <label class="label" for="definisce">Definisce strategie</label>
+            <label class="label" for="promuove">Promuove competenze digitali</label>
+            <label class="label" for="monitora">Monitora e vigila</label>
+        </div>
+        <div class="item">
+            <input type="radio" id="definisce" name="agenzia" checked>
+            <div class="content">
+                <div class="description">
+                    AgID sviluppa strategie e piani per trasformare il Paese, rendendolo più digitale.
+                </div>
+                <a class="animated-link" href=#>APPROFONDISCI</a>
+                <div class="textbox">
+                    <div class="text">
+                        <a class="title" href="#">Piano Triennale per l'informatica</a>
+                        <div class="description">
+                            Il <strong>Piano Triennale per l’informatica nella Pubblica Amministrazione</strong> promuove
+                            la trasformazione digitale del Paese fornendo indicazioni operative,
+                            obiettivi e risultati attesi.
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="img-container">
-                <img class="image" src="/src/assets/fingerprint.png" alt="fingerprint">
+        </div>
+
+        <div class="item">
+            <input type="radio" id="promuove" name="agenzia">
+            <div class="content">
+                <div class="description">
+                    AgID promuove la diffusione di competenze digitali per la Pubblica Amministrazione, le imprese e i cittadini.
+                </div>
+                <a class="animated-link" href=#>APPROFONDISCI</a>
+                <div class="textbox">
+                    <div class="text">
+                        <a class="title" href="#">Piano Triennale per l'informatica</a>
+                        <div class="description">
+                            Il <strong>Piano Triennale per l’informatica nella Pubblica Amministrazione</strong> promuove
+                            la trasformazione digitale del Paese fornendo indicazioni operative,
+                            obiettivi e risultati attesi.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <input type="radio" id="monitora" name="agenzia">
+            <div class="content">
+                <div class="description">
+                    AgID monitora l’avanzamento della trasformazione digitale del Paese, vigilando sul rispetto delle norme in materia di digitalizzazione.
+                </div>
+                <a class="animated-link" href=#>APPROFONDISCI</a>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="text-container">
+                            <div class="card-title">SPID</div>
+                            <span class="card-num">1.1</span>
+                            <span class="card-unit"> mld</span>
+                            <div class="card-description">Accessi effettuati nel 2023</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="text-container">
+                            <div class="card-title">SANZIONI IRROGATE</div>
+                            <span class="card-num">480</span>
+                            <span class="card-description"> mila euro</span>
+                            <div class="card-description">ai soggetti vigilati nel 2023</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="text-container">
+                            <div class="card-title">CAMPAGNE MALWARE</div>
+                            <span class="card-num">1.7</span>
+                            <span class="card-unit"> mgl</span>
+                            <div class="card-description">Rilevate nel 2023</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+</div>
+!-- COMPONENTE scss:"radio-component-prova1 -->
 
+<!-- COMPONENTE scss:"radio-component-prova2 -->
+<div class="radio-component">
+    <div class="title-component">Cosa fa l'Agenzia</div>
+    <div class="container">
 
-    <!-- COMPONENTE scss:"radio-component-prova1 --
-    <div class="radio-component">
-        <div class="title-component">Cosa fa l'Agenzia</div>
         <div class="items-container">
-            <div class="labels-container">
+
+            <input type="radio" id="definisce" name="agenzia" checked>
+
+            <input type="radio" id="promuove" name="agenzia">
+
+            <input type="radio" id="monitora" name="agenzia">
+
+            <div class="labels">
                 <label class="label" for="definisce">Definisce strategie</label>
+
                 <label class="label" for="promuove">Promuove competenze digitali</label>
+
                 <label class="label" for="monitora">Monitora e vigila</label>
             </div>
-            <div class="item">
-                <input type="radio" id="definisce" name="agenzia" checked>
-                <div class="content">
+
+            <div class="content">
+
+                <div class="item" id="c1">
                     <div class="description">
                         AgID sviluppa strategie e piani per trasformare il Paese, rendendolo più digitale.
                     </div>
@@ -125,40 +229,52 @@
                         <div class="text">
                             <a class="title" href="#">Piano Triennale per l'informatica</a>
                             <div class="description">
-                                Il <strong>Piano Triennale per l’informatica nella Pubblica Amministrazione</strong> promuove 
-                                la trasformazione digitale del Paese fornendo indicazioni operative, 
+                                Il <strong>Piano Triennale per l’informatica nella Pubblica Amministrazione</strong>
+                                promuove
+                                la trasformazione digitale del Paese fornendo indicazioni operative,
                                 obiettivi e risultati attesi.
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="item">
-                <input type="radio" id="promuove" name="agenzia">
-                <div class="content">
+                <div class="item" id="c2">
                     <div class="description">
-                        AgID promuove la diffusione di competenze digitali per la Pubblica Amministrazione, le imprese e i cittadini.
+                        AgID promuove la diffusione di competenze digitali per la Pubblica Amministrazione, le imprese e
+                        i cittadini.
                     </div>
                     <a class="animated-link" href=#>APPROFONDISCI</a>
                     <div class="textbox">
                         <div class="text">
-                            <a class="title" href="#">Piano Triennale per l'informatica</a>
+                            <a class="title" href="#">Competenze digitali di base</a>
                             <div class="description">
-                                Il <strong>Piano Triennale per l’informatica nella Pubblica Amministrazione</strong> promuove 
-                                la trasformazione digitale del Paese fornendo indicazioni operative, 
-                                obiettivi e risultati attesi.
+                                Per modernizzare il Paese, realizzare la cittadinanza digitale e garantire l’inclusione
+                                digitale.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <div class="text">
+                            <a class="title" href="#">Competenze specialistiche</a>
+                            <div class="description">
+                                Per la crescita digitale della Pubblica Amministrazione e delle imprese.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="textbox">
+                        <div class="text">
+                            <a class="title" href="#">Competenze di e-leadership</a>
+                            <div class="description">
+                                Per gestire il cambiamento organizzativo e l’innovazione.
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="item">
-                <input type="radio" id="monitora" name="agenzia">
-                <div class="content">
+                <div class="item" id="c3">
                     <div class="description">
-                        AgID monitora l’avanzamento della trasformazione digitale del Paese, vigilando sul rispetto delle norme in materia di digitalizzazione.
+                        AgID monitora l’avanzamento della trasformazione digitale del Paese, vigilando sul rispetto
+                        delle norme in materia di digitalizzazione.
                     </div>
                     <a class="animated-link" href=#>APPROFONDISCI</a>
                     <div class="cards-container">
@@ -168,7 +284,7 @@
                                 <span class="card-num">1.1</span>
                                 <span class="card-unit"> mld</span>
                                 <div class="card-description">Accessi effettuati nel 2023</div>
-                            </div>        
+                            </div>
                         </div>
                         <div class="card">
                             <div class="text-container">
@@ -176,7 +292,7 @@
                                 <span class="card-num">480</span>
                                 <span class="card-description"> mila euro</span>
                                 <div class="card-description">ai soggetti vigilati nel 2023</div>
-                            </div>        
+                            </div>
                         </div>
                         <div class="card">
                             <div class="text-container">
@@ -184,110 +300,6 @@
                                 <span class="card-num">1.7</span>
                                 <span class="card-unit"> mgl</span>
                                 <div class="card-description">Rilevate nel 2023</div>
-                            </div>        
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    !-- COMPONENTE scss:"radio-component-prova1 -->
-
-    <!-- COMPONENTE scss:"radio-component-prova2 -->
-    <div class="radio-component">
-        <div class="title-component">Cosa fa l'Agenzia</div>
-        <div class="container">
-
-            <div class="items-container">
-
-                <input type="radio" id="definisce" name="agenzia" checked>
-                <label class="label" for="definisce">Definisce strategie</label>
-
-                <input type="radio" id="promuove" name="agenzia">
-                <label class="label" for="promuove">Promuove competenze digitali</label>
-
-                <input type="radio" id="monitora" name="agenzia">
-                <label class="label" for="monitora">Monitora e vigila</label>
-
-                <div class="content">
-
-                    <div class="item" id="c1">
-                        <div class="description">
-                            AgID sviluppa strategie e piani per trasformare il Paese, rendendolo più digitale.
-                        </div>
-                        <a class="animated-link" href=#>APPROFONDISCI</a>
-                        <div class="textbox">
-                            <div class="text">
-                                <a class="title" href="#">Piano Triennale per l'informatica</a>
-                                <div class="description">
-                                    Il <strong>Piano Triennale per l’informatica nella Pubblica Amministrazione</strong> promuove 
-                                    la trasformazione digitale del Paese fornendo indicazioni operative, 
-                                    obiettivi e risultati attesi.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item" id="c2">
-                        <div class="description">
-                            AgID promuove la diffusione di competenze digitali per la Pubblica Amministrazione, le imprese e i cittadini.
-                        </div>
-                        <a class="animated-link" href=#>APPROFONDISCI</a>
-                        <div class="textbox">
-                            <div class="text">
-                                <a class="title" href="#">Competenze digitali di base</a>
-                                <div class="description">
-                                    Per modernizzare il Paese, realizzare la cittadinanza digitale e garantire l’inclusione digitale.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="textbox">
-                            <div class="text">
-                                <a class="title" href="#">Competenze specialistiche</a>
-                                <div class="description">
-                                    Per la crescita digitale della Pubblica Amministrazione e delle imprese.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="textbox">
-                            <div class="text">
-                                <a class="title" href="#">Competenze di e-leadership</a>
-                                <div class="description">
-                                    Per gestire il cambiamento organizzativo e l’innovazione.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="item" id="c3">
-                        <div class="description">
-                            AgID monitora l’avanzamento della trasformazione digitale del Paese, vigilando sul rispetto delle norme in materia di digitalizzazione.
-                        </div>
-                        <a class="animated-link" href=#>APPROFONDISCI</a>
-                        <div class="cards-container">
-                            <div class="card">
-                                <div class="text-container">
-                                    <div class="card-title">SPID</div>
-                                    <span class="card-num">1.1</span>
-                                    <span class="card-unit"> mld</span>
-                                    <div class="card-description">Accessi effettuati nel 2023</div>
-                                </div>        
-                            </div>
-                            <div class="card">
-                                <div class="text-container">
-                                    <div class="card-title">SANZIONI IRROGATE</div>
-                                    <span class="card-num">480</span>
-                                    <span class="card-description"> mila euro</span>
-                                    <div class="card-description">ai soggetti vigilati nel 2023</div>
-                                </div>        
-                            </div>
-                            <div class="card">
-                                <div class="text-container">
-                                    <div class="card-title">CAMPAGNE MALWARE</div>
-                                    <span class="card-num">1.7</span>
-                                    <span class="card-unit"> mgl</span>
-                                    <div class="card-description">Rilevate nel 2023</div>
-                                </div>        
                             </div>
                         </div>
                     </div>
@@ -295,132 +307,152 @@
             </div>
         </div>
     </div>
-    <!-- COMPONENTE scss:"radio-component-prova2 -->
+</div>
+<!-- COMPONENTE scss:"radio-component-prova2 -->
 
 
-    <div class="main">
+<div class="main">
 
-        <div class="ordered-list-component">
-            <div class="textbox">
-                <div class="title">Strategie lorem ipsum lorem ipsum</div>
-                <div class="text">Nel giro di pochi anni si è passati dalla proliferazione di servizi digitali accessibili
-                    tramite credenziali proprietarie diverse per ogni Amministrazione a servizi digitali sempre più 
-                    omogenei e accessibili tramite un'identità unica. Ecco i prossimi passi.</div>
-            </div>
-            <ol class="list">
-                <li class="list-item">
-                    <div class="list-title">Decennio digitale europeo</div>
-                    <div class="list-description">Le attività di AgID si inseriscono all’interno del <a href="#">Programma strategico 
-                        per il decennio digitale</a>, che fissa, a livello europeo, traguardi e obiettivi concreti per il 2030. 
-                        Il Programma istituisce un <strong>ciclo di cooperazione annuale</strong> per conseguire gli obiettivi e i 
-                        traguardi comuni, basato su un meccanismo di collaborazione annuale che coinvolge la 
-                        Commissione Europea e gli Stati membri.</div>
-                </li>
-                <li class="list-item">
-                    <div class="list-title">La strategia Italia Digitale 2026</div>
-                    <div class="list-description">Unica, gratuita, facile da usare: in linea con la <a href="#">Strategia Italia digitale 2026</a>, 
-                        ogni cittadino deve disporre di <strong>un’identità digitale che gli permetta di identificarsi in maniera 
-                        sicura</strong> e di <strong> a tutti i servizi digitali pubblici e privati</strong> in Italia e in Europa. 
-                        <strong>AgID coordina il sistema</strong> pubblico dell’identità digitale – SPID.</div>
-                </li>
-            </ol>
-        </div>
-
-        <div class="description-cards-component">
-            <div class="textbox">
-                <div class="title">Strumenti lorem ipsum lorem ipsum</div>
-                <div class="description">AgID promuove strumenti e piattaforme innovative per l’adozione di sistemi di identificazione 
-                    digitali da parte delle Pubbliche Amministrazioni.</div>
-            </div>
-            <div class="cards-container">
-                <div class="item">
-                    <div class="text-container">
-                        <div><a class="card-title" href="#">SPIDlorem ipsum lorem ipsum</a></div>
-                        <div class="card-description">Il Sistema Pubblico di Identità Digitale permette ai cittadini di accedere
-                            ai servizi online delle Pubbliche Amministrazioni e dei soggetti privati aderenti con un'unica
-                            identità digitale.</div>
-                    </div>        
-                </div>
-                <div class="item">
-                    <div class="text-container">
-                        <div><a class="card-title" href="#">eIDAS</a></div>
-                        <div class="card-description">Il Regolamento rappresenta la base normativa a livello comunitario per
-                            i servizi fiduciari e i mezzi di identificazione elettronica degli stati membri dell’Unione
-                            europea.</div>
-                    </div>        
-                </div>
-                <div class="item">
-                    <div class="text-container">
-                        <div><a class="card-title" href="#">eIDAS</a></div>
-                        <div class="card-description">Il Regolamento rappresenta la base normativa a livello comunitario per
-                            i servizi fiduciari e i mezzi di identificazione elettronica degli stati membri dell’Unione
-                            europea.</div>
-                    </div>        
-                </div>
+    <div class="ordered-list-component">
+        <div class="textbox">
+            <div class="title">Strategie lorem ipsum lorem ipsum</div>
+            <div class="text">Nel giro di pochi anni si è passati dalla proliferazione di servizi digitali accessibili
+                tramite credenziali proprietarie diverse per ogni Amministrazione a servizi digitali sempre più
+                omogenei e accessibili tramite un'identità unica. Ecco i prossimi passi.
             </div>
         </div>
+        <ol class="list">
+            <li class="list-item">
+                <div class="list-title">Decennio digitale europeo</div>
+                <div class="list-description">Le attività di AgID si inseriscono all’interno del <a href="#">Programma
+                    strategico
+                    per il decennio digitale</a>, che fissa, a livello europeo, traguardi e obiettivi concreti per il
+                    2030.
+                    Il Programma istituisce un <strong>ciclo di cooperazione annuale</strong> per conseguire gli
+                    obiettivi e i
+                    traguardi comuni, basato su un meccanismo di collaborazione annuale che coinvolge la
+                    Commissione Europea e gli Stati membri.
+                </div>
+            </li>
+            <li class="list-item">
+                <div class="list-title">La strategia Italia Digitale 2026</div>
+                <div class="list-description">Unica, gratuita, facile da usare: in linea con la <a href="#">Strategia
+                    Italia digitale 2026</a>,
+                    ogni cittadino deve disporre di <strong>un’identità digitale che gli permetta di identificarsi in
+                        maniera
+                        sicura</strong> e di <strong> a tutti i servizi digitali pubblici e privati</strong> in Italia e
+                    in Europa.
+                    <strong>AgID coordina il sistema</strong> pubblico dell’identità digitale – SPID.
+                </div>
+            </li>
+        </ol>
+    </div>
 
-        <div class="description-box-component">
+    <div class="description-cards-component">
+        <div class="textbox">
+            <div class="title">Strumenti lorem ipsum lorem ipsum</div>
+            <div class="description">AgID promuove strumenti e piattaforme innovative per l’adozione di sistemi di
+                identificazione
+                digitali da parte delle Pubbliche Amministrazioni.
+            </div>
+        </div>
+        <div class="cards-container">
             <div class="item">
-                <div class="textbox">
-                    <a class="title" href="#">Portale SPID</a>
-                    <div class="description">
-                        Con SPID accedere ai servizi della Pubblica Amministrazione è semplice 
-                        e veloce: <a href=#>scopri come ottenerlo</a>
+                <div class="text-container">
+                    <div><a class="card-title" href="#">SPIDlorem ipsum lorem ipsum</a></div>
+                    <div class="card-description">Il Sistema Pubblico di Identità Digitale permette ai cittadini di
+                        accedere
+                        ai servizi online delle Pubbliche Amministrazioni e dei soggetti privati aderenti con un'unica
+                        identità digitale.
                     </div>
                 </div>
             </div>
             <div class="item">
-                <div class="textbox">
-                    <a class="title" href="#">Avanzamento della Trasformazione Digitale</a>
-                    <div class="description">
-                        Sul sito dedicato, puoi consultare in ogni momento i dati di 
-                        monitoraggio dei progetti strategici di trasformazione digitale, 
-                        per scoprire il loro stato di avanzamento. 
+                <div class="text-container">
+                    <div><a class="card-title" href="#">eIDAS</a></div>
+                    <div class="card-description">Il Regolamento rappresenta la base normativa a livello comunitario per
+                        i servizi fiduciari e i mezzi di identificazione elettronica degli stati membri dell’Unione
+                        europea.
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text-container">
+                    <div><a class="card-title" href="#">eIDAS</a></div>
+                    <div class="card-description">Il Regolamento rappresenta la base normativa a livello comunitario per
+                        i servizi fiduciari e i mezzi di identificazione elettronica degli stati membri dell’Unione
+                        europea.
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="dropdown-simple-text-component">
-            <div class="title-component">Risorse utili lorem ipsum lorem ipsum</div>
+    <div class="description-box-component">
+        <div class="item">
             <div class="textbox">
-                <input type="checkbox" id="collegamenti" name="collegamenti" class="input"/>
-                <label class="title" for="collegamenti">Collegamenti<div class="chevron"></div></label>
+                <a class="title" href="#">Portale SPID</a>
                 <div class="description">
-                    La <a href=#>Carta Nazionale dei Servizi</a> e la <a href=#>Carta d’Identità Elettronica</a> 
-                    sono due ulteriori strumenti di identificazione per accedere ai 
-                    servizi delle Pubbliche Amministrazioni.
+                    Con SPID accedere ai servizi della Pubblica Amministrazione è semplice
+                    e veloce: <a href=#>scopri come ottenerlo</a>
                 </div>
             </div>
         </div>
-
-        <div class="dropdown-text-image-component">
-            <div class="title-component">Documenti e normative</div>
-            <a class="animated-link" href=#>SCOPRI TUTTI I DOCUMENTI</a>
-            <a href="#" class="new-link">mio link</a>
-            <div class="banner">
-                <input type="checkbox" id="documenti" name="documenti" class="input"/>
-                <label class="title" for="documenti">Documenti correlati<div class="chevron"></div></label>
-                <div class="item">
-                    <div class="wrapper">
-                        <ul class="tags">
-                            <li class="tag-text">Determinazioni direttoriali</li>
-                            <li class="tag-text">Identità digitale</li>
-                            <li class="tag-text">CNS</li>
-                        </ul>
-                        <a class="text" href="#">Determinazione Direttoriale</a>
-                        <ul class="info">
-                            <li class="info-text">PDF</li>
-                            <li class="info-text">1,0 MB</li>
-                            <li class="info-text">08/05/2024</li>
-                        </ul>
-                    </div>
+        <div class="item">
+            <div class="textbox">
+                <a class="title" href="#">Avanzamento della Trasformazione Digitale</a>
+                <div class="description">
+                    Sul sito dedicato, puoi consultare in ogni momento i dati di
+                    monitoraggio dei progetti strategici di trasformazione digitale,
+                    per scoprire il loro stato di avanzamento.
                 </div>
             </div>
         </div>
-
     </div>
+
+    <div class="dropdown-simple-text-component">
+        <div class="title-component">Risorse utili lorem ipsum lorem ipsum</div>
+        <div class="textbox">
+            <input type="checkbox" id="collegamenti" name="collegamenti" class="input"/>
+            <label class="title" for="collegamenti">Collegamenti
+                <div class="chevron"></div>
+            </label>
+            <div class="description">
+                La <a href=#>Carta Nazionale dei Servizi</a> e la <a href=#>Carta d’Identità Elettronica</a>
+                sono due ulteriori strumenti di identificazione per accedere ai
+                servizi delle Pubbliche Amministrazioni.
+            </div>
+        </div>
+    </div>
+
+    <div class="dropdown-text-image-component">
+        <div class="title-component">Documenti e normative</div>
+        <a class="animated-link" href=#>SCOPRI TUTTI I DOCUMENTI</a>
+        <a href="#" class="new-link">mio link</a>
+        <div class="banner">
+            <input type="checkbox" id="documenti" name="documenti" class="input"/>
+            <label class="title" for="documenti">Documenti correlati
+                <div class="chevron"></div>
+            </label>
+            <div class="item">
+                <div class="wrapper">
+                    <ul class="tags">
+                        <li class="tag-text">Determinazioni direttoriali</li>
+                        <li class="tag-text">Identità digitale</li>
+                        <li class="tag-text">CNS</li>
+                    </ul>
+                    <a class="text" href="#">Determinazione Direttoriale</a>
+                    <ul class="info">
+                        <li class="info-text">PDF</li>
+                        <li class="info-text">1,0 MB</li>
+                        <li class="info-text">08/05/2024</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 </body>
 </html>
