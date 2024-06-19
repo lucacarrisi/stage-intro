@@ -61,8 +61,9 @@
 -->
 
 <body>
+<h1 class="visuallyhidden">titolo pagina</h1>
 
-<div class="header">
+<header class="header">
     <div class="container-first-line">
         <div class="logo">
             <a href="https://www.agid.gov.it/it/ambiti-intervento/identita-digitale" target="_blank"><img
@@ -81,146 +82,49 @@
         <li class="list-element"><a href="#" class="text">Linee guida</a></li>
         <li class="list-element"><a href="#" class="text">Comunicazione</a></li>
     </ul>
-
-</div>
-
-<div class="hero-banner-component">
-    <ul class="accordion-menu">
-        <li><a class="accordion-text" href="#">Home</a></li>
-        <span class="accordion-text">/</span>
-        <li><a class="accordion-text" href="#">Ambiti di intervento</a></li>
-        <span class="accordion-text">/</span></li>
-        <li><a class="accordion-text" href="#">Identità digitale</a></li>
-    </ul>
-    <div class="container">
-        <div class="textbox">
-            <div class="title">Identità digitale</div>
-            <div class="description">L’Identità digitale rappresenta <strong>lo strumento che permette ai cittadini di
-                identificarsi in modo univoco e accedere a tutti i servizi digitali della Pubblica
-                Amministrazione e a quelli dei privati aderenti.</strong><br><br>Gli strumenti di identificazione
-                per accedere ai servizi online sono SPID (Sistema Pubblico di Identità Digitale), CIE
-                (Carta d’Identità Elettronica) e CNS (Carta Nazionale dei Servizi).
-            </div>
-        </div>
-        <div class="img-container">
-            <img class="image" src="/src/assets/fingerprint.png" alt="fingerprint">
-        </div>
-    </div>
-</div>
+</header>
 
 
-<!-- COMPONENTE scss:"radio-component-prova1 --
-<div class="radio-component">
-    <div class="title-component">Cosa fa l'Agenzia</div>
-    <div class="items-container">
-        <div class="labels-container">
-            <label class="label" for="definisce">Definisce strategie</label>
-            <label class="label" for="promuove">Promuove competenze digitali</label>
-            <label class="label" for="monitora">Monitora e vigila</label>
-        </div>
-        <div class="item">
-            <input type="radio" id="definisce" name="agenzia" checked>
-            <div class="content">
-                <div class="description">
-                    AgID sviluppa strategie e piani per trasformare il Paese, rendendolo più digitale.
-                </div>
-                <a class="animated-link" href=#>APPROFONDISCI</a>
+<div class="main">
+
+    <div class="hero-banner-component">
+        <div class="content-wrapper">
+            <ul class="accordion-menu">
+                <li><a class="accordion-text" href="#">Home</a></li>
+                <span class="accordion-text">/</span>
+                <li><a class="accordion-text" href="#">Ambiti di intervento</a></li>
+                <span class="accordion-text">/</span></li>
+                <li><a class="accordion-text" href="#">Identità digitale</a></li>
+            </ul>
+            <div class="container">
                 <div class="textbox">
-                    <div class="text">
-                        <a class="title" href="#">Piano Triennale per l'informatica</a>
-                        <div class="description">
-                            Il <strong>Piano Triennale per l’informatica nella Pubblica Amministrazione</strong> promuove
-                            la trasformazione digitale del Paese fornendo indicazioni operative,
-                            obiettivi e risultati attesi.
-                        </div>
+                    <h2 class="title">Identità digitale</h2>
+                    <div class="description">L’Identità digitale rappresenta <strong>lo strumento che permette ai cittadini di
+                        identificarsi in modo univoco e accedere a tutti i servizi digitali della Pubblica
+                        Amministrazione e a quelli dei privati aderenti.</strong><br><br>Gli strumenti di identificazione
+                        per accedere ai servizi online sono SPID (Sistema Pubblico di Identità Digitale), CIE
+                        (Carta d’Identità Elettronica) e CNS (Carta Nazionale dei Servizi).
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="item">
-            <input type="radio" id="promuove" name="agenzia">
-            <div class="content">
-                <div class="description">
-                    AgID promuove la diffusione di competenze digitali per la Pubblica Amministrazione, le imprese e i cittadini.
-                </div>
-                <a class="animated-link" href=#>APPROFONDISCI</a>
-                <div class="textbox">
-                    <div class="text">
-                        <a class="title" href="#">Piano Triennale per l'informatica</a>
-                        <div class="description">
-                            Il <strong>Piano Triennale per l’informatica nella Pubblica Amministrazione</strong> promuove
-                            la trasformazione digitale del Paese fornendo indicazioni operative,
-                            obiettivi e risultati attesi.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="item">
-            <input type="radio" id="monitora" name="agenzia">
-            <div class="content">
-                <div class="description">
-                    AgID monitora l’avanzamento della trasformazione digitale del Paese, vigilando sul rispetto delle norme in materia di digitalizzazione.
-                </div>
-                <a class="animated-link" href=#>APPROFONDISCI</a>
-                <div class="cards-container">
-                    <div class="card">
-                        <div class="text-container">
-                            <div class="card-title">SPID</div>
-                            <span class="card-num">1.1</span>
-                            <span class="card-unit"> mld</span>
-                            <div class="card-description">Accessi effettuati nel 2023</div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="text-container">
-                            <div class="card-title">SANZIONI IRROGATE</div>
-                            <span class="card-num">480</span>
-                            <span class="card-description"> mila euro</span>
-                            <div class="card-description">ai soggetti vigilati nel 2023</div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="text-container">
-                            <div class="card-title">CAMPAGNE MALWARE</div>
-                            <span class="card-num">1.7</span>
-                            <span class="card-unit"> mgl</span>
-                            <div class="card-description">Rilevate nel 2023</div>
-                        </div>
-                    </div>
+                <div class="img-container">
+                    <img class="image" src="/src/assets/fingerprint.png" alt="fingerprint">
                 </div>
             </div>
         </div>
     </div>
-</div>
-!-- COMPONENTE scss:"radio-component-prova1 -->
 
-<!-- COMPONENTE scss:"radio-component-prova2 -->
-<div class="radio-component">
-    <div class="title-component">Cosa fa l'Agenzia</div>
-    <div class="container">
-
+    <!-- COMPONENTE scss:"radio-component-prova1 --
+    <div class="radio-component">
+        <div class="title-component">Cosa fa l'Agenzia</div>
         <div class="items-container">
-
-            <input type="radio" id="definisce" name="agenzia" checked>
-
-            <input type="radio" id="promuove" name="agenzia">
-
-            <input type="radio" id="monitora" name="agenzia">
-
-            <div class="labels">
+            <div class="labels-container">
                 <label class="label" for="definisce">Definisce strategie</label>
-
                 <label class="label" for="promuove">Promuove competenze digitali</label>
-
                 <label class="label" for="monitora">Monitora e vigila</label>
             </div>
-
-            <div class="content">
-
-                <div class="item" id="c1">
+            <div class="item">
+                <input type="radio" id="definisce" name="agenzia" checked>
+                <div class="content">
                     <div class="description">
                         AgID sviluppa strategie e piani per trasformare il Paese, rendendolo più digitale.
                     </div>
@@ -229,52 +133,40 @@
                         <div class="text">
                             <a class="title" href="#">Piano Triennale per l'informatica</a>
                             <div class="description">
-                                Il <strong>Piano Triennale per l’informatica nella Pubblica Amministrazione</strong>
-                                promuove
+                                Il <strong>Piano Triennale per l’informatica nella Pubblica Amministrazione</strong> promuove
                                 la trasformazione digitale del Paese fornendo indicazioni operative,
                                 obiettivi e risultati attesi.
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="item" id="c2">
+            <div class="item">
+                <input type="radio" id="promuove" name="agenzia">
+                <div class="content">
                     <div class="description">
-                        AgID promuove la diffusione di competenze digitali per la Pubblica Amministrazione, le imprese e
-                        i cittadini.
+                        AgID promuove la diffusione di competenze digitali per la Pubblica Amministrazione, le imprese e i cittadini.
                     </div>
                     <a class="animated-link" href=#>APPROFONDISCI</a>
                     <div class="textbox">
                         <div class="text">
-                            <a class="title" href="#">Competenze digitali di base</a>
+                            <a class="title" href="#">Piano Triennale per l'informatica</a>
                             <div class="description">
-                                Per modernizzare il Paese, realizzare la cittadinanza digitale e garantire l’inclusione
-                                digitale.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="textbox">
-                        <div class="text">
-                            <a class="title" href="#">Competenze specialistiche</a>
-                            <div class="description">
-                                Per la crescita digitale della Pubblica Amministrazione e delle imprese.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="textbox">
-                        <div class="text">
-                            <a class="title" href="#">Competenze di e-leadership</a>
-                            <div class="description">
-                                Per gestire il cambiamento organizzativo e l’innovazione.
+                                Il <strong>Piano Triennale per l’informatica nella Pubblica Amministrazione</strong> promuove
+                                la trasformazione digitale del Paese fornendo indicazioni operative,
+                                obiettivi e risultati attesi.
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="item" id="c3">
+            <div class="item">
+                <input type="radio" id="monitora" name="agenzia">
+                <div class="content">
                     <div class="description">
-                        AgID monitora l’avanzamento della trasformazione digitale del Paese, vigilando sul rispetto
-                        delle norme in materia di digitalizzazione.
+                        AgID monitora l’avanzamento della trasformazione digitale del Paese, vigilando sul rispetto delle norme in materia di digitalizzazione.
                     </div>
                     <a class="animated-link" href=#>APPROFONDISCI</a>
                     <div class="cards-container">
@@ -307,45 +199,156 @@
             </div>
         </div>
     </div>
-</div>
-<!-- COMPONENTE scss:"radio-component-prova2 -->
+    !-- COMPONENTE scss:"radio-component-prova1 -->
 
+    <!-- COMPONENTE scss:"radio-component-prova2 -->
+    <div class="radio-component">
+        <div class="title-component">Cosa fa l'Agenzia</div>
+        <div class="container">
 
-<div class="main">
+            <div class="items-container">
 
-    <div class="ordered-list-component">
-        <div class="textbox">
-            <div class="title">Strategie lorem ipsum lorem ipsum</div>
-            <div class="text">Nel giro di pochi anni si è passati dalla proliferazione di servizi digitali accessibili
-                tramite credenziali proprietarie diverse per ogni Amministrazione a servizi digitali sempre più
-                omogenei e accessibili tramite un'identità unica. Ecco i prossimi passi.
+                <input type="radio" id="definisce" name="agenzia" checked>
+
+                <input type="radio" id="promuove" name="agenzia">
+
+                <input type="radio" id="monitora" name="agenzia">
+
+                <div class="labels">
+                    <label class="label" for="definisce">Definisce strategie</label>
+
+                    <label class="label" for="promuove">Promuove competenze digitali</label>
+
+                    <label class="label" for="monitora">Monitora e vigila</label>
+                </div>
+
+                <div class="content">
+
+                    <div class="item" id="c1">
+                        <div class="description">
+                            AgID sviluppa strategie e piani per trasformare il Paese, rendendolo più digitale.
+                        </div>
+                        <a class="animated-link" href=#>APPROFONDISCI</a>
+                        <div class="textbox">
+                            <div class="text">
+                                <a class="title" href="#">Piano Triennale per l'informatica</a>
+                                <div class="description">
+                                    Il <strong>Piano Triennale per l’informatica nella Pubblica Amministrazione</strong>
+                                    promuove
+                                    la trasformazione digitale del Paese fornendo indicazioni operative,
+                                    obiettivi e risultati attesi.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" id="c2">
+                        <div class="description">
+                            AgID promuove la diffusione di competenze digitali per la Pubblica Amministrazione, le imprese e
+                            i cittadini.
+                        </div>
+                        <a class="animated-link" href=#>APPROFONDISCI</a>
+                        <div class="textbox">
+                            <div class="text">
+                                <a class="title" href="#">Competenze digitali di base</a>
+                                <div class="description">
+                                    Per modernizzare il Paese, realizzare la cittadinanza digitale e garantire l’inclusione
+                                    digitale.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="textbox">
+                            <div class="text">
+                                <a class="title" href="#">Competenze specialistiche</a>
+                                <div class="description">
+                                    Per la crescita digitale della Pubblica Amministrazione e delle imprese.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="textbox">
+                            <div class="text">
+                                <a class="title" href="#">Competenze di e-leadership</a>
+                                <div class="description">
+                                    Per gestire il cambiamento organizzativo e l’innovazione.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" id="c3">
+                        <div class="description">
+                            AgID monitora l’avanzamento della trasformazione digitale del Paese, vigilando sul rispetto
+                            delle norme in materia di digitalizzazione.
+                        </div>
+                        <a class="animated-link" href=#>APPROFONDISCI</a>
+                        <div class="cards-container">
+                            <div class="card">
+                                <div class="text-container">
+                                    <div class="card-title">SPID</div>
+                                    <span class="card-num">1.1</span>
+                                    <span class="card-unit"> mld</span>
+                                    <div class="card-description">Accessi effettuati nel 2023</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="text-container">
+                                    <div class="card-title">SANZIONI IRROGATE</div>
+                                    <span class="card-num">480</span>
+                                    <span class="card-description"> mila euro</span>
+                                    <div class="card-description">ai soggetti vigilati nel 2023</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="text-container">
+                                    <div class="card-title">CAMPAGNE MALWARE</div>
+                                    <span class="card-num">1.7</span>
+                                    <span class="card-unit"> mgl</span>
+                                    <div class="card-description">Rilevate nel 2023</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <ol class="list">
-            <li class="list-item">
-                <div class="list-title">Decennio digitale europeo</div>
-                <div class="list-description">Le attività di AgID si inseriscono all’interno del <a href="#">Programma
-                    strategico
-                    per il decennio digitale</a>, che fissa, a livello europeo, traguardi e obiettivi concreti per il
-                    2030.
-                    Il Programma istituisce un <strong>ciclo di cooperazione annuale</strong> per conseguire gli
-                    obiettivi e i
-                    traguardi comuni, basato su un meccanismo di collaborazione annuale che coinvolge la
-                    Commissione Europea e gli Stati membri.
+    </div>
+    <!-- COMPONENTE scss:"radio-component-prova2 -->
+
+    <div class="ordered-list-component">
+        <div class="content-wrapper">
+            <div class="textbox">
+                <div class="title">Strategie lorem ipsum lorem ipsum</div>
+                <div class="text">Nel giro di pochi anni si è passati dalla proliferazione di servizi digitali accessibili
+                    tramite credenziali proprietarie diverse per ogni Amministrazione a servizi digitali sempre più
+                    omogenei e accessibili tramite un'identità unica. Ecco i prossimi passi.
                 </div>
-            </li>
-            <li class="list-item">
-                <div class="list-title">La strategia Italia Digitale 2026</div>
-                <div class="list-description">Unica, gratuita, facile da usare: in linea con la <a href="#">Strategia
-                    Italia digitale 2026</a>,
-                    ogni cittadino deve disporre di <strong>un’identità digitale che gli permetta di identificarsi in
-                        maniera
-                        sicura</strong> e di <strong> a tutti i servizi digitali pubblici e privati</strong> in Italia e
-                    in Europa.
-                    <strong>AgID coordina il sistema</strong> pubblico dell’identità digitale – SPID.
-                </div>
-            </li>
-        </ol>
+            </div>
+            <ol class="list">
+                <li class="list-item">
+                    <div class="list-title">Decennio digitale europeo</div>
+                    <div class="list-description">Le attività di AgID si inseriscono all’interno del <a href="#">Programma
+                        strategico
+                        per il decennio digitale</a>, che fissa, a livello europeo, traguardi e obiettivi concreti per il
+                        2030.
+                        Il Programma istituisce un <strong>ciclo di cooperazione annuale</strong> per conseguire gli
+                        obiettivi e i
+                        traguardi comuni, basato su un meccanismo di collaborazione annuale che coinvolge la
+                        Commissione Europea e gli Stati membri.
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="list-title">La strategia Italia Digitale 2026</div>
+                    <div class="list-description">Unica, gratuita, facile da usare: in linea con la <a href="#">Strategia
+                        Italia digitale 2026</a>,
+                        ogni cittadino deve disporre di <strong>un’identità digitale che gli permetta di identificarsi in
+                            maniera
+                            sicura</strong> e di <strong> a tutti i servizi digitali pubblici e privati</strong> in Italia e
+                        in Europa.
+                        <strong>AgID coordina il sistema</strong> pubblico dell’identità digitale – SPID.
+                    </div>
+                </li>
+            </ol>
+        </div>
     </div>
 
     <div class="description-cards-component">
@@ -453,6 +456,10 @@
     </div>
 
 </div>
+
+<footer>
+
+</footer>
 
 </body>
 </html>

@@ -5,16 +5,6 @@
     margin: 0;
     padding: 90px;
 
-    a {
-        text-decoration-line: underline;
-        color: var(--blue-default);
-        text-decoration: underline;
-    }
-
-    a:hover {
-        text-decoration: none;
-    }
-
     .title-component {
         font-size: var(--text-xl);
         margin-bottom: 40px;
@@ -28,22 +18,8 @@
             display: none;
         }
 
-        #definisce:checked ~ .labels .label[for='definisce']{
-            font-weight: 700;
-            color: var(--blue);
-            border-bottom: 1.5px solid var(--blue);
-        }
-
-        #monitora:checked ~ .labels .label[for='monitora']{
-            font-weight: 700;
-            color: var(--blue);
-            border-bottom: 1.5px solid var(--blue);
-        }
-
-        #promuove:checked ~ .labels .label[for='promuove']{
-            font-weight: 700;
-            color: var(--blue);
-            border-bottom: 1.5px solid var(--blue);
+        #promuove:checked ~ .labels .label[for='promuove'], #monitora:checked ~ .labels .label[for='monitora'], #definisce:checked ~ .labels .label[for='definisce'] {
+            @extend .label-selected;
         }
 
         #definisce:checked ~ .content {
