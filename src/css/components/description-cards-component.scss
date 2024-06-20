@@ -5,10 +5,6 @@
     .textbox {
         margin-bottom: 50px;
 
-        .title {
-            font-size: var(--text-l);
-            margin-bottom: 20px;
-        }
         .description {
             font-size: var(--text-default);
         }
@@ -20,6 +16,7 @@
         flex-wrap: wrap;
         gap: 24px;
         justify-content: center;
+        margin-bottom: 40px;
 
         .item {
             width: calc(100%/3 - 16px);
@@ -49,11 +46,6 @@
         
         .textbox {
             margin-bottom: 30px;
-
-            .title {
-                font-size: var(--text-l-mobile);
-                line-height: 44px;
-            }
         }
     
         .cards-container {
@@ -65,7 +57,6 @@
                 min-width: 300px;
 
                 .text-container {
-                    
                     .card-title {
                         font-size: var(--text-l-mobile);
                         line-height: 42px;

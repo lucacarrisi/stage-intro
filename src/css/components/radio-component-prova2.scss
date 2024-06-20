@@ -2,13 +2,6 @@
 
 .radio-component {
     background-color: var(--white-blue);
-    margin: 0;
-    padding: 90px;
-
-    .title-component {
-        font-size: var(--text-xl);
-        margin-bottom: 40px;
-    }
 
     .container {
         position: relative;
@@ -18,37 +11,21 @@
             display: none;
         }
 
-        #promuove:checked ~ .labels .label[for='promuove'], #monitora:checked ~ .labels .label[for='monitora'], #definisce:checked ~ .labels .label[for='definisce'] {
+        #definisce:checked ~ .labels .label[for='definisce'], #promuove:checked ~ .labels .label[for='promuove'], #monitora:checked ~ .labels .label[for='monitora'] {
             @extend .label-selected;
         }
 
-        #definisce:checked ~ .content {
-            #c1 {
-                display: block;
-                animation: entrance .3s ease-in-out;
-            }
-        }
-
-        #promuove:checked ~ .content {
-            #c2 {
-                display: block;
-                animation: entrance .3s ease-in-out;
-            }
-        }
-
-        #monitora:checked ~ .content {
-            #c3 {
-                display: block;
-                animation: entrance .3s ease-in-out;
-            }
+        #definisce:checked ~ .content #tab-1, #promuove:checked ~ .content #tab-2, #monitora:checked ~ .content #tab-3 {
+            @extend .content-visible
         }
 
         .items-container {
             width: 100%;
 
-            .labels{
+            .labels {
                 display: flex;
                 justify-content: space-between;
+                
                 .label {
                     color: var(--blue-default);
                     border-bottom: 1.5px solid var(--light-gray);
@@ -64,38 +41,12 @@
 
                 .item {
                     display: none;
-                    margin: 0;
-                    padding: 0 90px;
+                    margin: 20px 0;
+                    padding: 0 110px;
 
                     .description {
                         font-size: var(--text-default);
                         margin: 50px 0 20px 0;
-                    }
-
-                    .animated-link {
-                        font-weight: 700;
-                        display: flex;
-                        align-items: center;
-                        margin-bottom: 30px;
-                        color: var(--blue-default);
-
-                        &:hover {
-                            text-decoration: none;
-                        }
-                    }
-
-                    .animated-link::after {
-                        content: '';
-                        display: inline-block;
-                        background-image: url(/src/assets/link-arrow.svg);
-                        background-size: contain;
-                        width: 20px;
-                        height: 20px;
-                        margin-left: 15px;
-                    }
-
-                    .animated-link:hover::after {
-                        animation: linkSteps 1s ease-in-out infinite;
                     }
 
                     .textbox {
@@ -186,12 +137,6 @@
     }
 
     @include breakpoint('medium') {
-        padding: 30px;
-
-        .title-component {
-            font-size: var(--text-xl-mobile);
-            margin-bottom: 20px;
-        }
 
         .container {
 
@@ -199,13 +144,13 @@
 
                 .labels{
                     flex-direction: column;
+
                     .label {
                         width: 100%;
                         font-size: var(--text-default);
                         line-height: 20px;
                     }
                 }
-
 
                 .content {
 

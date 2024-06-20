@@ -2,7 +2,7 @@
 
 .header {
     background-color: var(--blue-default);
-    padding: 30px 90px 20px 90px;
+    padding-top: 30px;
     margin:0;
 
     .container-first-line {
@@ -10,7 +10,6 @@
         justify-content: space-between;
 
         .logo {
-
             .image {
                 max-width: 250px;
             }
@@ -43,15 +42,12 @@
 
     .navbar {
         margin-top: 30px;
-        padding: 0;
         display: flex;
-        align-items: flex-start;
         list-style-type:none;
         column-gap: 40px;
 
         .list-element {
             position: relative;
-            padding-bottom: 5px;
         }
         
         .text {
@@ -76,8 +72,8 @@
             }
         }    
     }
+    
     @include breakpoint('medium'){
-        padding: 30px 30px 20px 30px;
 
         .container-first-line {
 
@@ -88,6 +84,7 @@
                     min-width: 130px;
                 }
             }
+
             .search {
                 flex-direction: column-reverse;
                 align-items: flex-end;
@@ -112,6 +109,5 @@
             column-gap: 20px;
             flex-wrap: wrap;
         }
-    
     }
 }

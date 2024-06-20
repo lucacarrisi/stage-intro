@@ -1,12 +1,6 @@
 @import "../utils/mixin";
-@import "../utils/animations";
 
 .dropdown-simple-text-component {
-
-    .title-component {
-        font-size: var(--text-xl);
-        margin-bottom: 30px;
-    }
 
     .textbox {
         border-top: .5px solid var(--black);
@@ -19,7 +13,9 @@
             &:checked ~ .description {
                 display: block;
             }
+
             &:checked + .title {
+
                 .chevron::after {
                     transform: rotate(180deg);
                 }
@@ -36,21 +32,6 @@
             justify-content: space-between;
             align-items: center;
             cursor: pointer;
-
-            .chevron {
-                            
-                &::after {
-                    content: '';
-                    display: block;
-                    background-image: url(/src/assets/dropdown-arrow.svg);
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    width: 20px;
-                    height: 20px;
-                    left: 20px;
-                    margin: 20px;
-                }
-            }
         }
 
         .description {
@@ -60,12 +41,6 @@
     }
 
     @include breakpoint('medium'){
-
-        .title-component {
-            font-size: var(--text-xl-mobile);
-            margin-bottom: 20px;
-            line-height: 50px;
-        }
 
         .textbox {
             

@@ -1,71 +1,76 @@
 @import "../utils/mixin";
 
 .description-box-component {
-    background-color: var(--white-blue);
-    padding: 40px;
 
-    .item {
-        padding: 0;
-        display: flex;
-        align-items: flex-start;
-        gap: 20px;
-        
-        .textbox {
-            margin-bottom: 40px;
-            width: 100%;
-            border-bottom: .5px solid var(--black);
-
-            .title {
-                color: var(--blue-default);
-                font-size: var(--text-m);
-                font-weight: 900;
-            }
-
-            .description {
-                font-size: var(--text-default);
-                margin: 20px 0 40px 0;
-            }
-        }
-        
-        &:last-child {
-
-            .textbox {
-                border: none;
-                margin-bottom: 0;
-
-                .description {
-                    margin-bottom: 0;
-                }
-            }
-        }
-
-        &::before {
-            content: "";
-            display: block;
-            background-image: url(/src/assets/arrow.svg);
-            background-size: cover;
-            max-width: 40px;
-            min-width: 40px;
-            height: 40px;
-        } 
-    }
-
-    @include breakpoint('medium'){
-        padding: 20px;
+    .items {
+        background-color: var(--white-blue);
+        padding: 40px;
         
         .item {
-
+            display: flex;
+            gap: 20px;
+        
             .textbox {
-                margin-bottom: 30px;
-    
+                margin-bottom: 40px;
+                width: 100%;
+                border-bottom: .5px solid var(--black);
+
+                .title {
+                    color: var(--blue-default);
+                    font-size: var(--text-m);
+                    font-weight: 900;
+                }
+
                 .description {
-                    margin: 10px 0 30px 0;
+                    font-size: var(--text-default);
+                    margin: 20px 0 40px 0;
+                }
+            }
+        
+            &:last-child {
+
+                .textbox {
+                    border: none;
+                    margin-bottom: 0;
+
+                    .description {
+                        margin-bottom: 0;
+                    }
                 }
             }
 
             &::before {
-                max-width: 35px;
-                min-width: 35px;
+                content: "";
+                display: block;
+                background-image: url(/src/assets/arrow.svg);
+                background-size: cover;
+                max-width: 40px;
+                min-width: 40px;
+                height: 40px;
+            } 
+        }   
+    }
+    
+
+    @include breakpoint('medium'){
+
+        .items {
+            padding: 20px;
+
+            .item {
+
+                .textbox {
+                    margin-bottom: 30px;
+        
+                    .description {
+                        margin: 10px 0 30px 0;
+                    }
+                }
+    
+                &::before {
+                    max-width: 35px;
+                    min-width: 35px;
+                }
             }
         }
     }

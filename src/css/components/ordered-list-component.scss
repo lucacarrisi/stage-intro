@@ -4,11 +4,6 @@
 
     .textbox {
 
-        .title {
-            font-size: var(--text-xl);
-            margin-bottom: 20px;
-        }
-
         .text {
             font-size: var(--text-default);
         }
@@ -38,12 +33,12 @@
     }
     
     @include breakpoint('medium'){
-        .textbox {
-            
-            .title {
-                font-size: var(--text-xl-mobile);
-                line-height: 50px;
+        .list {
+            .list-item {
+                .list-title {
+                    margin: 20px 0;
+                }
             }
-        } 
+        }
     }
 }

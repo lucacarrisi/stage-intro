@@ -1,0 +1,101 @@
+@import "../utils/mixin";
+
+.footer {
+    background-color: var(--blue);
+    padding-top: 30px;
+    margin-top: 90px;
+    color: var(--white);
+    
+    .content-wrapper {
+       
+        a {
+            color: var(--white);
+        }
+
+        .first-line {
+            width: 100%;
+            border-bottom: 1px solid var(--white);
+
+            .logo-agid {
+
+                .image{
+                    max-width: 300px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        .content {
+            display: flex;
+            gap: 24px;
+            margin: 30px 0;
+    
+            .box {
+                width: calc(100%/3 - 16px);
+               
+                .list-contacts {
+                    margin:0;
+                    padding: 0;
+
+                    .list-item {
+                        margin:0;
+                    }
+                    
+                    .list-title {
+                        @extend .list-item;
+                        font-weight: 700;
+                    }
+
+                    .list-item {
+                        list-style-type: none;
+                        margin-bottom: 15px;
+                    }
+                }
+
+                .list-documents {
+                    margin:0;
+                    padding: 0;
+
+                    .list-item {
+                        list-style-type: none;
+                        margin-bottom: 20px;
+                        font-size: var(--text-default);
+                    }
+                }
+
+                .list-social {
+                    
+                    .text {
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                    }
+
+                    .logo-container {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 30px;
+                      
+                        .logo {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include breakpoint('medium'){
+        .content-wrapper {
+            
+            .content {
+                flex-wrap: wrap;
+
+                .box {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

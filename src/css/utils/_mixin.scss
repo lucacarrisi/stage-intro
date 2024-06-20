@@ -30,9 +30,40 @@ $values : (
 }
 */
 
-.label-selected{
+.label-selected {
     font-weight: 700;
     color: var(--blue);
     border-bottom: 1.5px solid var(--blue);
 }
 
+.content-visible {
+    display: block;
+    animation: entrance .3s ease-in-out;
+}
+
+.animated-link {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: var(--blue-default);
+    width: fit-content;
+
+    &::after {
+        content: '';
+        display: inline-block;
+        background-image: url(/src/assets/link-arrow.svg);
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+        margin-left: 15px;
+    }
+
+    &:hover {
+        text-decoration: none;
+
+        &::after {
+            animation: linkSteps 1s ease-in-out infinite;
+        }
+    }
+}

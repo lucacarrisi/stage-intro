@@ -3,20 +3,14 @@
 .main {
     display: flex;
     flex-direction: column;
-    gap: 90px;
     
     a {
         text-decoration-line:underline;
         color: var(--blue-default);
         text-decoration: underline;
-    }
 
-    a:hover {
-        text-decoration: none;
-    }  
-
-    @include breakpoint('medium'){
-        padding: 30px;
-        gap: 30px;
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
