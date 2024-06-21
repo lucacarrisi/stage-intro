@@ -1,6 +1,6 @@
-@import "../utils/mixin";
+@import "../../utils/Agid_utils/mixin";
 
-.description-box-component {
+.description-box {
 
     .items {
         background-color: var(--white-blue);
@@ -42,7 +42,7 @@
             &::before {
                 content: "";
                 display: block;
-                background-image: url(/src/assets/arrow.svg);
+                background-image: url(/src/assets/Agid_assets/arrow.svg);
                 background-size: cover;
                 max-width: 40px;
                 min-width: 40px;

@@ -1,6 +1,6 @@
-@import "../utils/mixin";
+@import "../../utils/Agid_utils/mixin";
 
-.dropdown-simple-text-component {
+.accordion-simple-text {
 
     .textbox {
         border-top: .5px solid var(--black);
@@ -32,6 +32,10 @@
             justify-content: space-between;
             align-items: center;
             cursor: pointer;
+
+            .chevron {
+                @extend .chevron;
+            }
         }
 
         .description {

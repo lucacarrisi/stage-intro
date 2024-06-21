@@ -1,6 +1,6 @@
-@import "../utils/mixin";
+@import "../../utils/Agid_utils/mixin";
 
-.hero-banner-component {
+.hero-banner {
     min-height: 500px;
     background-color: var(--blue);
 
@@ -8,7 +8,7 @@
         margin-top: 20px;
         padding: 0;
         display: flex;
-        list-style-type:none;
+        list-style-type: none;
 
         .accordion-text {
             color: var(--white);

@@ -1,6 +1,6 @@
-@import "../utils/mixin";
+@import "../../utils/Agid_utils/mixin";
 
-.radio-component {
+.tab-panels {
     background-color: var(--white-blue);
 
     .container {
@@ -44,6 +44,10 @@
                     margin: 20px 0;
                     padding: 0 110px;
 
+                    .animated-link {
+                        @extend .animated-link;
+                    }
+
                     .description {
                         font-size: var(--text-default);
                         margin: 50px 0 20px 0;
@@ -86,7 +90,7 @@
                         &::before {
                             content: "";
                             display: block;
-                            background-image: url(/src/assets/arrow.svg);
+                            background-image: url(/src/assets/Agid_assets/arrow.svg);
                             background-size: cover;
                             max-width: 40px;
                             min-width: 40px;
@@ -101,8 +105,7 @@
                         gap: 24px;
 
                         .card {
-                            max-width: 400px;
-                            min-width: 400px;
+                            width: calc(100% / 2 - 24px);
                             display: flex;
 
                             .text-container {

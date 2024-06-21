@@ -1,6 +1,6 @@
-@import "../utils/mixin";
+@import "../../utils/Agid_utils/mixin";
 
-.description-cards-component {
+.description-cards {
 
     .textbox {
         margin-bottom: 50px;
@@ -49,7 +49,7 @@
         }
     
         .cards-container {
-            display:flex;
+            display: flex;
             width: 100%;
             flex-wrap: wrap;
     

@@ -1,9 +1,9 @@
-@import "../utils/mixin";
+@import "../../utils/Agid_utils/mixin";
 
 .header {
     background-color: var(--blue-default);
     padding-top: 30px;
-    margin:0;
+    margin: 0;
 
     .container-first-line {
         display: flex;
@@ -12,9 +12,10 @@
         .logo {
             .image {
                 max-width: 250px;
+                max-height: 100px;
             }
         }
-        
+
         .search{
             display: flex;
             justify-content: flex-end;
@@ -43,13 +44,13 @@
     .navbar {
         margin-top: 30px;
         display: flex;
-        list-style-type:none;
+        list-style-type: none;
         column-gap: 40px;
 
         .list-element {
             position: relative;
         }
-        
+
         .text {
             color: var(--white);
             font-size: var(--text-default);
@@ -59,7 +60,7 @@
                 bottom: 0;
                 content: "";
                 display: block;
-                height: 1px;
+                height: 1.5px;
                 left: 0;
                 position: absolute;
                 background: var(--white);
@@ -72,7 +73,7 @@
             }
         }    
     }
-    
+
     @include breakpoint('medium'){
 
         .container-first-line {

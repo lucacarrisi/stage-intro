@@ -1,4 +1,4 @@
-@import "../utils/mixin";
+@import "../../utils/Agid_utils/mixin";
 
 .footer {
     background-color: var(--blue);
@@ -7,7 +7,6 @@
     color: var(--white);
     
     .content-wrapper {
-       
         a {
             color: var(--white);
         }
@@ -15,12 +14,17 @@
         .first-line {
             width: 100%;
             border-bottom: 1px solid var(--white);
-
+            padding-bottom: 30px;
+            
             .logo-agid {
 
-                .image{
-                    max-width: 300px;
-                    margin-bottom: 30px;
+                .img-wrapper {
+                    display: inline-block;
+
+                    .image{
+                        max-width: 300px;
+                        max-height: 100px;
+                    }
                 }
             }
         }
@@ -28,38 +32,42 @@
         .content {
             display: flex;
             gap: 24px;
-            margin: 30px 0;
+            margin-top: 30px;
     
             .box {
                 width: calc(100%/3 - 16px);
+                
+                .list-title {
+                    margin-bottom: 15px;
+                    font-weight: 700;
+                }
                
                 .list-contacts {
-                    margin:0;
+                    margin: 0;
                     padding: 0;
-
-                    .list-item {
-                        margin:0;
-                    }
-                    
-                    .list-title {
-                        @extend .list-item;
-                        font-weight: 700;
-                    }
 
                     .list-item {
                         list-style-type: none;
                         margin-bottom: 15px;
+                        
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
                     }
                 }
 
                 .list-documents {
-                    margin:0;
+                    margin: 0;
                     padding: 0;
 
                     .list-item {
                         list-style-type: none;
                         margin-bottom: 20px;
                         font-size: var(--text-default);
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
                     }
                 }
 

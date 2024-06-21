@@ -52,7 +52,7 @@ $values : (
     &::after {
         content: '';
         display: inline-block;
-        background-image: url(/src/assets/link-arrow.svg);
+        background-image: url(/src/assets/Agid_assets/link-arrow.svg);
         background-size: contain;
         width: 20px;
         height: 20px;
@@ -65,5 +65,20 @@ $values : (
         &::after {
             animation: linkSteps 1s ease-in-out infinite;
         }
+    }
+}
+
+.chevron {
+                            
+    &::after {
+        content: '';
+        display: block;
+        background-image: url(/src/assets/Agid_assets/dropdown-arrow.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        left: 20px;
+        margin: 20px;
     }
 }
