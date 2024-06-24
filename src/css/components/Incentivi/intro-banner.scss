@@ -1,0 +1,53 @@
+@import "../../utils/Incentivi_utils/mixin";
+
+.intro-banner {
+
+    .content-wrapper {
+
+        .textbox {
+            text-align: center;
+
+            .title {
+                @extend .title-style;
+                color: var(--gray);
+            }
+
+            .subtitle {
+                @extend .subtitle-style;
+                color: var(--gray);
+            }
+        }
+
+        // DA ANIMARE E RENDERE BUTTONS
+        .items-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 85px 0 100px 0;
+            width: 100%;
+            gap: 16px;
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 40px;
+                width: calc(100% / 4);
+                justify-content: flex-end;
+
+                .image {
+                    max-height: 100px;
+                }
+
+                .text {
+                    font-size: var(--text-18);
+                    font-weight: 600;
+                    line-height: 27px;
+                    color: var(--blue);
+                    text-decoration: underline;
+                    margin-top: 40px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

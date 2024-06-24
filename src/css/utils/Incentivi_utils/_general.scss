@@ -1,0 +1,14 @@
+.content-wrapper {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 128px;
+    box-sizing: border-box;
+}
+
+.visuallyhidden {
+    display: none;
+}
+
+a:hover {
+    text-decoration: none;
+}

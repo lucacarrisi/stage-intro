@@ -1,0 +1,45 @@
+$breakpoints: (
+    'mobile': ( max-width: 767px ),
+    'medium': ( max-width: 1024px ),
+) !default;
+
+@mixin breakpoint($breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+        @content;
+    }
+}
+
+.button-red {
+    font-size: var(--text-14);
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: var(--white);
+    background-color: var(--red);
+    border: none;
+    border-radius: 50px;
+    padding: 0 20px;
+    margin: 0;
+
+    &:hover {
+        transition: .3s ease-in-out;
+        color: var(--red);
+        background-color: var(--white);
+    }
+}
+
+.title-style {
+    font-size: var(--text-title);
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: .5px;
+    margin: 70px 0 0;
+}
+
+.subtitle-style {
+    font-size: var(--text-20);
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: .5px;
+    margin: 20px 0;
+}

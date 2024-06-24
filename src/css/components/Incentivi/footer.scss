@@ -1,0 +1,42 @@
+.footer {
+    background-color: var(--blue);
+    padding: 50px 0;
+
+    .content-wrapper {
+
+        .top-wrapper {
+            margin-bottom: 32px;
+            border-bottom: 1px solid var(--light-gray);
+
+            .logos-wrapper {
+                display: flex;
+                gap: 50px;
+                margin-bottom: 36px;
+
+                .img-link {
+
+                    .logo {
+                        max-height: 40px;
+                        max-width: 205px;
+                    }
+                }
+            }
+        }
+        .bottom-wrapper {
+
+            .documents {
+                list-style-type: none;
+                display: flex;
+                gap: 37px;
+                padding: 0;
+
+                .doc {
+                    color: var(--white);
+                    font-size: var(--text-15);
+                    font-weight: 600;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}

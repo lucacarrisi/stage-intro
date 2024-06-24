@@ -1,0 +1,54 @@
+@import "../../utils/Incentivi_utils/mixin";
+
+.search-box {
+    background-color: var(--red);
+
+     .content-wrapper {
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;            
+
+            .title {
+                @extend .title-style;
+                color: var(--white);
+            }
+
+            .searchbar {
+                background-color: var(--white);
+                border-radius: 50px;
+                width: 100%;
+                margin: 44px 0 87px;
+                min-height: 70px;
+                max-width: 713px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .search {
+                    border: none;
+                    min-width: fit-content;
+                    width: 100%;
+                    text-align: center;
+                    height: 100%;
+                    padding: 10px;
+                    margin: 0 30px;
+                    font-size: var(--text-18);
+                    color: var(--gray);
+
+                    &::placeholder {
+                        font-size: var(--text-18);
+                        color: var(--gray);
+                    }
+                }
+               
+                .search-logo {
+                    max-width: 30px;
+                    max-height: 30px;
+                    margin-right: 31px;
+                }
+            }
+        }
+    }
+}

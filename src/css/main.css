@@ -1,4 +1,7 @@
 /*@import "./components/second-task.scss";*/
 /*@import "./components/first-task.scss";*/
-@import "./components/Agid/index.scss";
-@import "./utils/Agid_utils/index.scss";
+/* @import "./components/Agid/index.scss"; */
+/* @import "./utils/Agid_utils/index.scss"; */
+@import "./components/Incentivi/index.scss";
+@import "./utils/Incentivi_utils/index.scss";
+
