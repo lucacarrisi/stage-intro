@@ -1,0 +1,109 @@
+@import "../../utils/Incentivi_utils/mixin";
+
+.text-image-box {
+    padding: 70px 0;
+
+    .content-wrapper {
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .textbox {
+                max-width: 580px;
+
+                .subtitle {
+                    color: var(--grey);
+                    font-size: var(--text-16);
+                    font-weight: 600;
+                    line-height: 33.6px;
+                    letter-spacing: 1px; 
+                }
+
+                .title {
+                    @extend .title-style;
+                    color: var(--grey);
+                }
+
+                .description {
+                    @extend .text-style;
+                    color: var(--grey); 
+                    margin-bottom: 25px;
+                }
+
+                .button {
+                    @extend .button-red;
+                }
+            }
+
+            .img-container {
+                min-width: 495px;
+                height: 337px;
+                display: flex;
+                position: relative;
+                margin-left: 20px;
+                
+                .bg-container {
+                    width: 195px;
+                    height: 258px;
+                    background-color: var(--yellow);
+                    border-radius: 8px;
+                    position: absolute;
+                    z-index: 1;
+                    right: 0;
+                    bottom: 0;
+                }
+
+                .image {
+                    width: 475px;
+                    height: 317px;
+                    object-fit: contain;
+                    position: relative;
+                    z-index: 2;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 60px;
+
+            .slide-icon {
+                display: flex;
+                gap: 17.5px;
+
+                .icon {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+
+            .swipe-arrow {
+                display: flex;
+                gap: 30px;
+
+                .swipe {
+                    width: fit-content;
+                    height: fit-content;
+                    display: flex;
+                    align-items: center;
+                    padding: 0;
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+
+                    .arrow {
+                        object-fit: contain;
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

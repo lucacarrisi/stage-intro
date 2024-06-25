@@ -2,6 +2,7 @@
 
 .search-box {
     background-color: var(--red);
+    padding-top: 70px;
 
      .content-wrapper {
 
@@ -35,11 +36,11 @@
                     padding: 10px;
                     margin: 0 30px;
                     font-size: var(--text-18);
-                    color: var(--gray);
+                    color: var(--grey);
 
                     &::placeholder {
                         font-size: var(--text-18);
-                        color: var(--gray);
+                        color: var(--grey);
                     }
                 }
                

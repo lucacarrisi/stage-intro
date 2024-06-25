@@ -108,12 +108,22 @@
                             display: block;
                             height: 6px;
                             position: relative;
-                            background: var(--gray);
+                            background: var(--grey);
                             transition: border .3s ease-in-out;
                             width: 100%;
                             
                         }
                     }
+                }
+            }
+        }
+    }
+
+    @include breakpoint-between('md', 'lg') {
+        .top-wrapper {
+            .top {
+                .logos-wrapper {
+                    gap: 30px;
                 }
             }
         }

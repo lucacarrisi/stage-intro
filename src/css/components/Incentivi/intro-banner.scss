@@ -1,7 +1,8 @@
 @import "../../utils/Incentivi_utils/mixin";
 
 .intro-banner {
-
+    padding-top: 70px;
+    
     .content-wrapper {
 
         .textbox {
@@ -9,12 +10,12 @@
 
             .title {
                 @extend .title-style;
-                color: var(--gray);
+                color: var(--grey);
             }
 
             .subtitle {
-                @extend .subtitle-style;
-                color: var(--gray);
+                @extend .text-style;
+                color: var(--grey);
             }
         }
 

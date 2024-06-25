@@ -1,8 +1,15 @@
+@import "./mixin";
+
 .content-wrapper {
     max-width: var(--content-width);
     margin: 0 auto;
     padding: 0 128px;
     box-sizing: border-box;
+
+    @include breakpoint-between('md', 'lg'){
+        max-width: var(--content-width-m);
+        padding: 0 40px;
+    }
 }
 
 .visuallyhidden {
