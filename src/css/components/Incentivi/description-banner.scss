@@ -1,6 +1,6 @@
 @import "../../utils/Incentivi_utils/mixin";
 
-.text-image-box {
+.description-banner {
     padding: 70px 0;
 
     .content-wrapper {
@@ -11,26 +11,56 @@
             width: 100%;
 
             .textbox {
-                max-width: 580px;
-
-                .subtitle {
-                    color: var(--grey);
-                    font-size: var(--text-16);
-                    font-weight: 600;
-                    line-height: 33.6px;
-                    letter-spacing: 1px;
-                }
+                max-width: 480px;
 
                 .title {
                     @extend .title-style;
                     color: var(--grey);
+                    font-weight: 800;
+                    line-height: 28px;
                 }
 
-                .description {
-                    @extend .text-style;
-                    color: var(--grey); 
-                    margin-bottom: 25px;
+                .list-wrapper {
+                    margin: 50px 0 54px;
+                    
+                    .list {
+                        list-style-type: none;
+                        margin: 0;
+
+                        .list-item {
+                            color: var(--grey);
+                            font-size: var(--text-22);
+                            font-weight: 400;
+                            line-height: 36px;
+                            letter-spacing: .5px;
+                            margin-bottom: 14px;
+                            display: flex;
+                            align-items: center;
+                            
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+
+                            &::before {
+                                content: '';
+                                display: block;
+                                background-image: url(/src/assets/Incentivi_assets/check.svg);
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                min-width: 30px;
+                                max-width: 30px;
+                                height: 18.92px;
+                                margin-right: 20px;
+                            }
+                        }
+                    }
                 }
+
+                // .description {
+                //     @extend .text-style;
+                //     color: var(--grey); 
+                //     margin-bottom: 25px;
+                // }
 
                 .button {
                     @extend .button-red;

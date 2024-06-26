@@ -30,12 +30,18 @@
 
             .card-wrapper {
                 width: calc(100% / 3 - 18.66px);
+                min-height: fit-content;
                 display: flex;
+                position: relative;
+                transform: rotate(0);
+                transition: .5s ease-in-out;
 
                 .card {
                     background-color: var(--white);
                     border-radius: 10px;
                     padding: 30px;
+                    position: relative;
+                    z-index: 1;
 
                     .card-title {
                         font-size: var(--text-22);
@@ -56,6 +62,23 @@
                 }
 
                 .card-icon {
+                    width: 18.75px;
+                    height: 32.36px;
+                    position: absolute;
+                    z-index: 2;
+                    left: 19px;
+                    top: 0;
+                }
+
+                &:hover {
+                    transform: rotate(5deg);
+                    transition: .5s ease-in-out;
+
+                    .card {
+                        .card-title {
+                            transform: rotateY(0);
+                        }
+                    }
 
                 }
             }

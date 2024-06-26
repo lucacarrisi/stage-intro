@@ -56,8 +56,6 @@
 
                 .button {
                     @extend .button-red;
-                    width: 105px;
-                    height: 33px;
                 }
             }
         }     
@@ -102,16 +100,14 @@
                         text-decoration: none;
                         margin-bottom: 40px;
 
-                        // ALLINEARE LA LINEA AL MARGINE INFERIORE
                         &:hover::after {
                             content: "";
                             display: block;
                             height: 6px;
-                            position: relative;
+                            position: absolute;
                             background: var(--grey);
-                            transition: border .3s ease-in-out;
                             width: 100%;
-                            
+                            bottom: 0;
                         }
                     }
                 }

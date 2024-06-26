@@ -34,6 +34,9 @@
                 padding: 0 40px;
                 width: calc(100% / 4);
                 justify-content: flex-end;
+                cursor: pointer;
+                transform: scale(1);
+                transition: .5s ease-in-out;
 
                 .image {
                     max-height: 100px;
@@ -47,6 +50,15 @@
                     text-decoration: underline;
                     margin-top: 40px;
                     text-align: center;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: .2s ease-in-out;
+
+                    .text {
+                        text-decoration: none;
+                    }
                 }
             }
         }
