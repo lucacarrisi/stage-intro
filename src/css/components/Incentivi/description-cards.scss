@@ -85,11 +85,7 @@
         }
 
         .button {
-            @extend .button-red;
-            background-color: var(--blue);
-            &:hover {
-                color: var(--blue);
-            }
+            @extend .button-blue;
         }
     }
 }

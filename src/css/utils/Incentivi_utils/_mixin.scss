@@ -20,23 +20,47 @@ $values : (
     }
 }
 
-.button-red {
+.button{
     font-size: var(--text-14);
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 1px;
-    color: var(--white);
-    background-color: var(--red);
     border: none;
     border-radius: 50px;
-    padding: 10px 25px;
+    padding: 8px 25px;
     cursor: pointer;
 
-    &:hover {
+    &:hover{
         transition: .3s ease-in-out;
+    }
+}
+
+.button-red {
+    color: var(--white);
+    background-color: var(--red);
+
+    &:hover {
         color: var(--red);
         background-color: var(--white);
-        font-size: var(--text-16);
+    }
+}
+
+.button-blue {
+    color: var(--white);
+    background-color: var(--blue);
+
+    &:hover {
+        color: var(--blue);
+        background-color: var(--white);
+    }
+}
+
+.button-red-blue {
+    color: var(--white);
+    background-color: var(--red);
+
+    &:hover {
+        background-color: var(--blue);
     }
 }
 

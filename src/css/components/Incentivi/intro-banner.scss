@@ -26,6 +26,7 @@
             margin: 85px 0 100px 0;
             width: 100%;
             gap: 16px;
+            align-items: flex-start;
 
             .item {
                 display: flex;
@@ -38,8 +39,15 @@
                 transform: scale(1);
                 transition: .5s ease-in-out;
 
-                .image {
+                .img-container{
                     max-height: 100px;
+                    min-height: 100px;
+                    height: 100%;
+                    display: flex;
+                    align-items: flex-end;
+                    .image {
+                        max-height: 100px;
+                    }
                 }
 
                 .text {
