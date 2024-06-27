@@ -20,7 +20,8 @@ $values : (
     }
 }
 
-.button{
+.button {
+    font-family: var(--font-family);
     font-size: var(--text-14);
     font-weight: 700;
     line-height: 24px;
@@ -70,6 +71,12 @@ $values : (
     line-height: 48px;
     letter-spacing: .5px;
     margin: 0;
+
+    @include breakpoint('mobile') {
+        font-size: var(--text-30);
+        line-height: 36px;
+        letter-spacing: .27px;
+    }
 }
 
 .text-style {
@@ -78,4 +85,10 @@ $values : (
     line-height: 28px;
     letter-spacing: .5px;
     margin: 20px 0;
+
+    @include breakpoint('mobile') {
+        font-size: var(--text-18);
+        line-height: 26px;
+        margin: 10px 0;
+    }
 }

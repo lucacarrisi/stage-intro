@@ -22,25 +22,25 @@
         <div class="content-wrapper">
             <div class="top">
                 <div class="logos-wrapper">
-                    <a class="img-link" href="#" aria-label=""><img class="logo"
-                                                                    src="/src/assets/Incentivi_assets/logo-ministero-sviluppo-economico.svg"
-                                                                    alt=""></a>
-                    <a class="img-link" href="#" aria-label=""><img class="logo"
-                                                                    src="src/assets/Incentivi_assets/logo-unione-europea.svg"
-                                                                    alt=""></a>
-                    <a class="img-link" href="#" aria-label=""><img class="logo"
-                                                                    src="src/assets/Incentivi_assets/logo-agenzia-coesione-territoriale.svg"
-                                                                    alt=""></a>
-                    <a class="img-link" href="#" aria-label=""><img class="logo"
-                                                                    src="src/assets/Incentivi_assets/logo-pon.svg"
-                                                                    alt=""></a>
+                    <a class="img-link" href="#" aria-label="Apri il sito del Ministero dello Sviluppo Economico">
+                        <img class="logo" src="/src/assets/Incentivi_assets/logo-ministero-sviluppo-economico.svg" alt="Logo Ministero dello Sviluppo Economico">
+                    </a>
+                    <a class="img-link" href="#" aria-label="Apri il sito dell'Unione Europea">
+                        <img class="logo" src="src/assets/Incentivi_assets/logo-unione-europea.svg" alt="Logo Unione Europea">
+                    </a>
+                    <a class="img-link" href="#" aria-label="Apri il sito dell'Agenzia di Coesione Territoriale">
+                        <img class="logo" src="src/assets/Incentivi_assets/logo-agenzia-coesione-territoriale.svg" alt="Logo Agenzia di Coesione Territoriale">
+                    </a>
+                    <a class="img-link" href="#" aria-label="Apri il sito del Pon">
+                        <img class="logo" src="src/assets/Incentivi_assets/logo-pon.svg" alt="Logo Pon">
+                    </a>
                 </div>
                 <div class="settings">
                     <ul class="languages">
-                        <li><a class="language" href="#" aria-label="">ITA</a></li>
-                        <li><a class="language" href="#" aria-label="">ENG</a></li>
+                        <li><a class="language" href="#" aria-label="Traduci in italiano">ITA</a></li>
+                        <li><a class="language" href="#" aria-label="Traduci in inglese">ENG</a></li>
                     </ul>
-                    <button class="button" type="button" name="accedi" aria-label="">ACCEDI</button>
+                    <button class="button" type="button" name="accedi" aria-label="Accedi">ACCEDI</button>
                 </div>
             </div>
         </div>
@@ -49,16 +49,20 @@
         <div class="content-wrapper">
             <div class="main-header">
                 <div class="logo-wrapper">
-                    <a class="img-link" href="#" aria-label=""><img class="logo"
-                                                                    src="src/assets/Incentivi_assets/logo-incentivi.svg"
-                                                                    alt=""></a>
+                    <a class="img-link" href="http://localhost:5173/incentivi-home.html" aria-label="Vai alla Homepage">
+                        <img class="logo" src="src/assets/Incentivi_assets/logo-incentivi.svg" alt="Logo Incentivi.gov">
+                    </a>
                 </div>
                 <nav class="navbar" role="menu" aria-labelledby="main-menu">
                     <h2 id="main-menu" class="visuallyhidden">Menu di navigazione</h2>
                     <li class="nav-item"><a class="nav-item-text" href="#">Catalogo</a></li>
-                    <li class="nav-item"><a class="nav-item-text" href="#">Chi siamo</a></li>
+                    <li class="nav-item"><a class="nav-item-text" href="http://localhost:5173/incentivi-chisiamo.html" >Chi siamo</a></li>
                     <li class="nav-item"><a class="nav-item-text" href="#">Glossario</a></li>
                 </nav>
+                <div class="mobile-icons">
+                    <button class="user-icon" aria-label="Accedi"></button>
+                    <button class="menu-icon" aria-label="Apri il Menu"></button>
+                </div>
             </div>
         </div>
     </div>
@@ -75,18 +79,20 @@
                     <div class="description">
                         Il portale dedicato agli incentivi per le imprese, i professionisti e le amministrazioni.
                         Per essere sempre al fianco di chi ha il coraggio di fare impresa.
-                        L’impresa in un click
+                        L'impresa in un click
                     </div>
-                    <button class="button" type="button" name="scopri" aria-label="">SCOPRI DI PIÙ</button>
-                    <div class="icons">
-                        <img class="icon" src="./src/assets/Incentivi_assets/play.svg" alt="">
-                        <img class="icon" src="./src/assets/Incentivi_assets/pause.svg" alt="">
+                    <a href="http://localhost:5173/incentivi-chisiamo.html">
+                        <button class="button" type="button" name="scopri" aria-label="Vai alla pagina Chi siamo">SCOPRI DI PIÙ</button>
+                    </a>
+                        <div class="icons">
+                        <img class="icon" src="./src/assets/Incentivi_assets/play.svg" alt="Play">
+                        <img class="icon" src="./src/assets/Incentivi_assets/pause.svg" alt="Pause">
                     </div>
                 </div>
                 <div class="img-container">
                     <div class="bg-container"></div>
-                    <img class="image" src="/src/assets/Incentivi_assets/header-photo.png" alt="">
-                    <img class="icon" src="src/assets/Incentivi_assets/light.svg" alt="">
+                    <img class="image" src="/src/assets/Incentivi_assets/header-photo.png" alt="Chi siamo">
+                    <div class="icon"></div>
                 </div>
             </div>
         </div>
@@ -99,25 +105,25 @@
                 <div class="subtitle">Segui il percorso</div>
             </div>
             <div class="items-container">
-                <div class="item" role="button" aria-label="">
+                <div class="item" role="button" tabindex="0" aria-label="">
                     <div class="img-container">
                         <img class="image" src="./src/assets/Incentivi_assets/group.svg">
                     </div>
                     <div class="text">Sono un aspirante imprenditore</div>
                 </div>
-                <div class="item" role="button" aria-label="">
+                <div class="item" role="button" tabindex="0" aria-label="">
                     <div class="img-container">
                         <img class="image" src="./src/assets/Incentivi_assets/impresa.svg">
                     </div>
-                    <div class="text">Sono un’impresa o un professionista</div>
+                    <div class="text">Sono un'impresa o un professionista</div>
                 </div>
-                <div class="item" role="button" aria-label="">
+                <div class="item" role="button" tabindex="0" aria-label="">
                     <div class="img-container">
                         <img class="image" src="./src/assets/Incentivi_assets/ente.svg">
                     </div>
-                    <div class="text">Sono un ente, un’istituzione</div>
+                    <div class="text">Sono un ente, un'istituzione</div>
                 </div>
-                <div class="item" role="button" aria-label="">
+                <div class="item" role="button" tabindex="0" aria-label="">
                     <div class="img-container">
                         <img class="image" src="./src/assets/Incentivi_assets/cittadino.svg">
                     </div>
@@ -133,9 +139,7 @@
                 <h2 class="title">Trova l'incentivo</h2>
                 <div class="searchbar">
                     <input class="search" type="text" id="cerca" placeholder="Fai una ricerca per parola chiave">
-                    <div role="button" class="btn-search">
-
-                    </div>
+                    <div role="button" class="btn-search"></div>
                 </div>
             </div>
         </div>
@@ -148,61 +152,61 @@
                 <div class="subtitle">Visualizza per categoria di interesse</div>
             </div>
             <div class="wrapper">
-                <div class="item">
+                <div class="item" role="button" tabindex="0" aria-label="">
                     <div class="image-wrapper">
                         <img class="image" src="./src/assets/Incentivi_assets/innovazione.svg">
                     </div>
                     <div class="text">Innovazione e ricerca</div>
                 </div>
-                <div class="item">
+                <div class="item" role="button" tabindex="0" aria-label="">
                     <div class="image-wrapper">
                         <img class="image" src="./src/assets/Incentivi_assets/sostegno.svg">
                     </div>
                     <div class="text">Sostegno investimenti</div>
                 </div>
-                <div class="item">
+                <div class="item" role="button" tabindex="0" aria-label="">
                     <div class="image-wrapper">
                         <img class="image" src="./src/assets/Incentivi_assets/crisi.svg">
                     </div>
                     <div class="text">Crisi d'impresa</div>
                 </div>
-                <div class="item">
+                <div class="item" role="button" tabindex="0" aria-label="">
                     <div class="image-wrapper">
                         <img class="image" src="./src/assets/Incentivi_assets/startup.svg">
                     </div>
                     <div class="text">Startup/Sviluppo d'impresa</div>
                 </div>
-                <div class="item">
+                <div class="item" role="button" tabindex="0" aria-label="">
                     <div class="image-wrapper">
                         <img class="image" src="./src/assets/Incentivi_assets/imprenditoria.svg">
                     </div>
                     <div class="text">Imprenditoria femminile</div>
                 </div>
-                <div class="item">
+                <div class="item" role="button" tabindex="0" aria-label="">
                     <div class="image-wrapper">
                         <img class="image" src="./src/assets/Incentivi_assets/digitalizzazione.svg">
                     </div>
                     <div class="text">Digitalizzazione</div>
                 </div>
-                <div class="item">
+                <div class="item" role="button" tabindex="0" aria-label="">
                     <div class="image-wrapper">
                         <img class="image" src="./src/assets/Incentivi_assets/transizione.svg">
                     </div>
                     <div class="text">Transizione ecologica</div>
                 </div>
-                <div class="item">
+                <div class="item" role="button" tabindex="0" aria-label="">
                     <div class="image-wrapper">
                         <img class="image" src="./src/assets/Incentivi_assets/inclusione.svg">
                     </div>
                     <div class="text">Inclusione sociale</div>
                 </div>
-                <div class="item">
+                <div class="item" role="button" tabindex="0" aria-label="">
                     <div class="image-wrapper">
                         <img class="image" src="./src/assets/Incentivi_assets/internazionalizzazione.svg">
                     </div>
                     <div class="text">Internazionalizzazione</div>
                 </div>
-                <div class="item">
+                <div class="item" role="button" tabindex="0" aria-label="">
                     <div class="image-wrapper">
                         <img class="image" src="./src/assets/Incentivi_assets/liquidita.svg">
                     </div>
@@ -216,6 +220,7 @@
     <div class="text-image-box">
         <div class="content-wrapper">
             <div class="item">
+                <button class="button-mobile">APPROFONDISCI</button>
                 <div class="textbox">
                     <div class="subtitle">I PIÙ RICHIESTI</div>
                     <h2 class="title">Fondo di garanzia per piccole e medie imprese</h2>
@@ -296,25 +301,25 @@
     <div class="content-wrapper">
         <div class="top-wrapper">
             <div class="logos-wrapper">
-                <a class="img-link" href="#" aria-label=""><img class="logo"
-                                                                src="/src/assets/Incentivi_assets/logo-ministero-sviluppo-economico.svg"
-                                                                alt=""></a>
-                <a class="img-link" href="#" aria-label=""><img class="logo"
-                                                                src="src/assets/Incentivi_assets/logo-unione-europea.svg"
-                                                                alt=""></a>
-                <a class="img-link" href="#" aria-label=""><img class="logo"
-                                                                src="src/assets/Incentivi_assets/logo-agenzia-coesione-territoriale.svg"
-                                                                alt=""></a>
-                <a class="img-link" href="#" aria-label=""><img class="logo"
-                                                                src="src/assets/Incentivi_assets/logo-pon.svg"
-                                                                alt=""></a>
+                <a class="img-link" href="#" aria-label="Apri il sito del Ministero dello Sviluppo Economico">
+                    <img class="logo" src="/src/assets/Incentivi_assets/logo-ministero-sviluppo-economico.svg" alt="Logo Ministero dello Sviluppo Economico">
+                </a>
+                <a class="img-link" href="#" aria-label="Apri il sito dell'Unione Europea">
+                    <img class="logo" src="src/assets/Incentivi_assets/logo-unione-europea.svg" alt="Logo Unione Europea">
+                </a>
+                <a class="img-link" href="#" aria-label="Apri il sito dell'Agenzia di Coesione Territoriale">
+                    <img class="logo" src="src/assets/Incentivi_assets/logo-agenzia-coesione-territoriale.svg" alt="Logo Agenzia di Coesione Territoriale">
+                </a>
+                <a class="img-link" href="#" aria-label="Apri il sito del Pon">
+                    <img class="logo" src="src/assets/Incentivi_assets/logo-pon.svg" alt="Logo Pon">
+                </a>
             </div>
         </div>
         <div class="bottom-wrapper">
             <ul class="documents">
-                <li><a class="doc" href="#" aria-label="">Privacy</a></li>
-                <li><a class="doc" href="#" aria-label="">Note legali</a></li>
-                <li><a class="doc" href="#" aria-label="">Accessibilità</a></li>
+                <li><a class="doc" href="#" aria-label="Apri i documenti relativi alla Privacy">Privacy</a></li>
+                <li><a class="doc" href="#" aria-label="Apri i documenti relativi alle Note Legali">Note legali</a></li>
+                <li><a class="doc" href="#" aria-label="Apri i documenti relativi all'Accessibilità">Accessibilità</a></li>
             </ul>
         </div>
     </div>

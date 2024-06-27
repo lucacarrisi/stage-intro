@@ -22,7 +22,7 @@
 
                 .list-wrapper {
                     margin: 50px 0 54px;
-                    
+
                     .list {
                         list-style-type: none;
                         margin: 0;
@@ -55,12 +55,6 @@
                         }
                     }
                 }
-
-                // .description {
-                //     @extend .text-style;
-                //     color: var(--grey); 
-                //     margin-bottom: 25px;
-                // }
 
                 .button {
                     @extend .button-red;

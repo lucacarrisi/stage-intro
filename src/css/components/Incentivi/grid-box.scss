@@ -27,7 +27,7 @@
             row-gap: 90px;
             grid-template-columns: repeat(5, 1fr);
             padding: 60px 0;
-            justify-items: center;
+            justify-items:center;
 
             .item {
                 background-color: var(--white);
@@ -73,6 +73,44 @@
 
         .button {
             @extend .button-red;
+        }
+    }
+
+    @include breakpoint('mobile') {
+        padding: 35px 0;
+
+        .content-wrapper {
+    
+            .wrapper {
+                gap: 20px;
+                grid-template-columns: repeat(2, 1fr);
+                padding: 32px 0;
+    
+                .item {
+                    width: 154.8px;
+                    padding: 20px 10px;
+    
+                    .image-wrapper {
+                        width: 75px;
+                        height: 75px;
+    
+                        .image {
+                            max-width: 74px;
+                            max-height: 74px;
+                        }
+                    }
+                    
+                    .text {
+                        font-size: var(--text-15);
+                        line-height: 22.89px;
+                        letter-spacing: .39px;
+                    }
+                }
+            }
+
+            .button {
+                padding: 8px 55px;
+            }
         }
     }
 }

@@ -17,8 +17,9 @@
             .subtitle {
                 @extend .text-style;
                 color: var(--blue); 
-                max-width: 574px;
+                padding: 0 305px;
                 margin: 20px auto;
+                
             }
         }
 
@@ -27,6 +28,7 @@
             gap: 28px;
             width: 100%;
             margin: 40px 0 60px;
+            flex-wrap: wrap;
 
             .card-wrapper {
                 width: calc(100% / 3 - 18.66px);
@@ -34,7 +36,7 @@
                 display: flex;
                 position: relative;
                 transform: rotate(0);
-                transition: .5s ease-in-out;
+                transition: .3s ease-in-out;
 
                 .card {
                     background-color: var(--white);
@@ -72,7 +74,7 @@
 
                 &:hover {
                     transform: rotate(5deg);
-                    transition: .5s ease-in-out;
+                    transition: .3s ease-in-out;
 
                     .card {
                         .card-title {
@@ -86,6 +88,31 @@
 
         .button {
             @extend .button-blue;
+        }
+    }
+
+    @include breakpoint('mobile') {
+        padding: 35px 0;
+        
+        .content-wrapper {
+
+            .cards-container {
+                gap: 25px;
+                margin: 40px 0 30px;
+
+                .card-wrapper {
+                    width: 100%;
+                    
+                    .card {
+                        border-radius: 4px;
+                        padding: 40px 25px;
+
+                        .card-title {
+                            margin: 3px 0 10px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

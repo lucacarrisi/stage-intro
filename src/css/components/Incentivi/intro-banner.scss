@@ -18,8 +18,7 @@
                 color: var(--grey);
             }
         }
-
-        // DA ANIMARE E RENDERE BUTTONS
+        
         .items-container {
             display: flex;
             justify-content: space-around;
@@ -27,13 +26,13 @@
             width: 100%;
             gap: 16px;
             align-items: flex-start;
+            flex-wrap: wrap;
 
             .item {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding: 0 40px;
-                width: calc(100% / 4);
+                width: calc(100% / 4 - 20px);
                 justify-content: flex-end;
                 cursor: pointer;
                 transform: scale(1);
@@ -45,6 +44,7 @@
                     height: 100%;
                     display: flex;
                     align-items: flex-end;
+
                     .image {
                         max-height: 100px;
                     }
@@ -58,6 +58,7 @@
                     text-decoration: underline;
                     margin-top: 40px;
                     text-align: center;
+                    padding: 0 30px;
                 }
 
                 &:hover {
@@ -66,6 +67,42 @@
 
                     .text {
                         text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    @include breakpoint ('mobile') {
+        padding-top: 35px;
+
+        .content-wrapper {
+
+            .textbox {
+
+                .title {
+                    padding: 0 5px;
+                }
+
+                .subtitle {
+                    font-size: var(--text-18);
+                    line-height: 26px;
+                }
+            }
+
+            .items-container {
+                margin: 76px 0 54px 0;
+                column-gap: 16px;
+                row-gap: 58px;
+    
+                .item {
+                    width: calc(100% / 2 - 16px);
+    
+                    .text {
+                        font-size: var(--text-16);
+                        line-height: 24px;
+                        margin-top: 28px;
+                        padding: 0;
                     }
                 }
             }

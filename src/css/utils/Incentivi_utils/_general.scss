@@ -10,6 +10,11 @@
         max-width: var(--content-width-m);
         padding: 0 40px;
     }
+
+    @include breakpoint('mobile') {
+        max-width: var(--content-width-mobile);
+        padding: 0 22px;
+    }
 }
 
 .visuallyhidden {

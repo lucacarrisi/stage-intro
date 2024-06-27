@@ -12,6 +12,7 @@
                 display: flex;
                 gap: 50px;
                 margin-bottom: 36px;
+                flex-wrap: wrap;
 
                 .img-link {
 
@@ -35,6 +36,38 @@
                     font-size: var(--text-15);
                     font-weight: 600;
                     line-height: 18px;
+                }
+            }
+        }
+    }
+
+    @include breakpoint('mobile') {
+        padding: 35px 0;
+
+        .content-wrapper {
+
+            .top-wrapper {
+
+                .logos-wrapper {
+                    column-gap: 24px;
+                    row-gap: 26px;
+
+                    .img-link {
+                        min-width: 128px;
+
+                        .logo {
+                            max-height: 35px;
+                            max-width: 179px;
+                        }
+                    }
+                }
+            }
+
+            .bottom-wrapper {
+
+                .documents {
+                    margin: 0;
+                    justify-content: space-between;
                 }
             }
         }
