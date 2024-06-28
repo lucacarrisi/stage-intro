@@ -34,8 +34,10 @@
                     margin: 20px 0 30px;
                 }
 
-                .button {
+                .link-item {
+                    @extend .button;
                     @extend .button-red;
+                    text-decoration: none;
                 }
 
                 .icons {
@@ -49,13 +51,14 @@
             }
 
             .img-container {
-                width: 385px;
-                height: 440px;
+                max-width: 385px;
+                min-width: 385px;
+                max-height: 440px;
                 display: flex;
                 position: relative;
 
                 .bg-container {
-                    width: 371px;
+                    width: 100%;
                     height: 371px;
                     background: linear-gradient(var(--red), var(--yellow));
                     border-radius: 100%;
@@ -92,12 +95,11 @@
         .content-wrapper {
 
             .container {
-                flex-wrap: wrap-reverse;
-                justify-content: center;
+                flex-direction: column-reverse;
+                align-items: center;
 
                 .textbox {
                     text-align: center;
-                    max-width: 329px;
                     margin: 0 0 27px 0;
 
                     .title {
@@ -122,23 +124,24 @@
                 }
                 
                 .img-container {
-                    width: 273.67px;
-                    height: 324.75px;
+                    max-width: 275px;
+                    min-width: 275px;
+                    height: 325px;
 
                     .bg-container {
-                        width: 273.67px;
-                        height: 273.67px;
+                        width: 275px;
+                        height: 275px;
                     
                     }
 
                     .image {
-                        width: 249.33px;
-                        height: 324.75px;
+                        width: 245px;
+                        height: 325px;
                     }
                     
                     .icon {
-                        width: 62.7px;
-                        height: 66.48px;
+                        width: 63px;
+                        height: 66px;
                     }
                 }  
             }

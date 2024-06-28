@@ -30,6 +30,7 @@ $values : (
     border-radius: 50px;
     padding: 8px 25px;
     cursor: pointer;
+    display: inline-block;
 
     &:hover{
         transition: .3s ease-in-out;
