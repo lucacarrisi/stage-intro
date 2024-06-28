@@ -89,7 +89,8 @@
             }
         }
 
-        .button {
+        .link-item {
+            @extend .button;
             @extend .button-blue;
         }
     }
@@ -100,6 +101,7 @@
         .content-wrapper {
 
             .textbox{
+                
                 .subtitle{
                     max-width: 100%;
                 }

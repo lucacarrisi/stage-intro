@@ -25,7 +25,7 @@
 
                     .list {
                         list-style-type: none;
-                        margin: 0;
+                        padding: 0;
 
                         .list-item {
                             color: var(--grey);
@@ -56,78 +56,78 @@
                     }
                 }
 
-                .button {
-                    @extend .button-red;
+                .button-container{
+                    .link-item {
+                        @extend .button;
+                        @extend .button-red-blue;
+                    }
                 }
             }
 
+            // SISTEMARE POSIZIONAMENTO
             .img-container {
-                min-width: 495px;
-                height: 337px;
+                min-width: 50%;
+                max-width: 50%;
+                max-height: 686px;
+                height: fit-content;
                 display: flex;
                 position: relative;
-                margin-left: 20px;
+                align-items: flex-end;
+                justify-content: start;
                 
                 .bg-container {
                     width: 195px;
-                    height: 258px;
+                    height: calc(100% - 60px);
                     background-color: var(--yellow);
                     border-radius: 8px;
                     position: absolute;
                     z-index: 1;
                     right: 0;
-                    bottom: 0;
+                    bottom: -20px;
                 }
 
                 .image {
-                    width: 475px;
-                    height: 317px;
+                    min-width: calc(100% - 20px);
+                    max-width: calc(100% - 20px);
+                    height: fit-content;
+                    max-height: 337px;
                     object-fit: contain;
                     position: relative;
                     z-index: 2;
                     left: 0;
                     top: 0;
                 }
-            }
-        }
 
-        .controls {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 60px;
-
-            .slide-icon {
-                display: flex;
-                gap: 17.5px;
-
-                .icon {
-                    width: 15px;
-                    height: 15px;
-                }
-            }
-
-            .swipe-arrow {
-                display: flex;
-                gap: 30px;
-
-                .swipe {
-                    width: fit-content;
-                    height: fit-content;
-                    display: flex;
-                    align-items: center;
-                    padding: 0;
-                    border: none;
-                    background-color: transparent;
-                    cursor: pointer;
-
-                    .arrow {
-                        object-fit: contain;
-                        width: 40px;
-                        height: 40px;
-                    }
+                .shape-container {
+                    width: 50%;
+                    height: 80%;
+                    max-width: 216px;
+                    max-height: 216px;
+                    border: 1px solid var(--x-light-grey);
+                    border-radius: 100%;
+                    position: absolute;
+                    z-index: 1;
+                    left: -12%;
+                    bottom: -32%;
                 }
             }
         }
+
+        .simple-text {
+                
+            .description {
+                margin: 160px 100px 10px;
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 45px;
+                letter-spacing: .5px;
+                text-align: center;
+            }
+        }
+    }
+
+    @include breakpoint('mobile') {
+        padding: 40px 0;
+
     }
 }

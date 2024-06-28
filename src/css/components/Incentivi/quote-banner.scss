@@ -1,0 +1,86 @@
+@import "../../utils/Incentivi_utils/mixin";
+
+.quote-banner {
+    background-color: var(--yellow);
+    padding: 70px 0;
+
+    .content-wrapper {
+
+        .wrapper {
+            text-align: center;
+
+            .quote {
+                @extend .title-style;
+                color: var(--blue);
+                font-weight: 400;
+                line-height: 60px;
+                margin: 0 50px;
+
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    background-image: url("data:image/svg+xml,%3Csvg width='31' height='24' viewBox='0 0 31 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.1328 23.9375H0.15625V16.0859C0.15625 12.9089 0.429688 10.4089 0.976562 8.58594C1.54948 6.73698 2.59115 5.08333 4.10156 3.625C5.61198 2.16667 7.53906 1.02083 9.88281 0.1875L12.0312 4.71875C9.84375 5.44792 8.26823 6.46354 7.30469 7.76562C6.36719 9.06771 5.8724 10.7995 5.82031 12.9609H11.1328V23.9375ZM29.4531 23.9375H18.4766V16.0859C18.4766 12.8828 18.75 10.3698 19.2969 8.54688C19.8698 6.72396 20.9115 5.08333 22.4219 3.625C23.9583 2.16667 25.8854 1.02083 28.2031 0.1875L30.3516 4.71875C28.1641 5.44792 26.5885 6.46354 25.625 7.76562C24.6875 9.06771 24.1927 10.7995 24.1406 12.9609H29.4531V23.9375Z' fill='%230B2C6E'/%3E%3C/svg%3E");
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    min-width: 40px;
+                    max-width: 40px;
+                    height: 60px;
+                    margin: 0 20px;
+                }
+
+                // DA ALLINEARE BENE
+                &::after {
+                    @extend ::before;
+                    background-image: url("data:image/svg+xml,%3Csvg width='31' height='24' viewBox='0 0 31 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.8672 0.0624986L30.8438 0.0624995L30.8438 7.91406C30.8438 11.0911 30.5703 13.5911 30.0234 15.4141C29.4505 17.263 28.4089 18.9167 26.8984 20.375C25.388 21.8333 23.4609 22.9792 21.1172 23.8125L18.9688 19.2812C21.1563 18.5521 22.7318 17.5365 23.6953 16.2344C24.6328 14.9323 25.1276 13.2005 25.1797 11.0391L19.8672 11.0391L19.8672 0.0624986ZM1.54688 0.062497L12.5234 0.0624979L12.5234 7.91406C12.5234 11.1172 12.25 13.6302 11.7031 15.4531C11.1302 17.276 10.0885 18.9167 8.57813 20.375C7.04167 21.8333 5.11458 22.9792 2.79688 23.8125L0.648438 19.2812C2.83594 18.5521 4.41146 17.5365 5.375 16.2344C6.3125 14.9323 6.80729 13.2005 6.85938 11.0391L1.54688 11.0391L1.54688 0.062497Z' fill='%230B2C6E'/%3E%3C/svg%3E");
+                    background-position: bottom;
+                }
+            }
+
+            .subtitle {
+                margin: 50px auto;
+                
+                .author {
+                    @extend .text-style;
+                    color: var(--blue);
+                    font-weight: 700;
+                    margin: 0   
+                }
+                
+                .author-description {
+                    @extend .text-style;
+                    color: var(--blue);
+                    font-weight: 400;
+                    margin: 0
+                }
+            }
+        }
+    }
+
+    @include breakpoint('mobile') {
+        padding: 35px 0;
+
+        .content-wrapper {
+
+            .wrapper {
+    
+                .quote {
+                    font-size: var(--text-28);
+                    line-height: 37px;
+                    margin: 0 18px;
+    
+                    &::before {
+                        min-width: 25px;
+                        max-width: 25px;
+                        height: 50px;
+                        margin: 0 10px;
+                    }
+                }
+    
+                .subtitle {
+                    margin: 46px 0 0;
+                }
+            }
+        }
+    }    
+}

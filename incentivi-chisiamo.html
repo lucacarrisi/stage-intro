@@ -17,24 +17,29 @@
 <h1 class="visuallyhidden">Chi siamo</h1>
 
 <header class="header">
-    <!-- BANDA NERA CHE NON SO SE VA EFFETTIVAMENTE MESSA O NO-->
-    <div class="black"></div>
-
     <div class="top-wrapper">
         <div class="content-wrapper">
             <div class="top">
                 <div class="logos-wrapper">
-                    <a class="img-link" href="#" aria-label=""><img class="logo" src="/src/assets/Incentivi_assets/logo-ministero-sviluppo-economico.svg" alt=""></a>
-                    <a class="img-link" href="#" aria-label=""><img class="logo" src="src/assets/Incentivi_assets/logo-unione-europea.svg" alt=""></a>
-                    <a class="img-link" href="#" aria-label=""><img class="logo" src="src/assets/Incentivi_assets/logo-agenzia-coesione-territoriale.svg" alt=""></a>
-                    <a class="img-link" href="#" aria-label=""><img class="logo" src="src/assets/Incentivi_assets/logo-pon.svg" alt=""></a>
+                    <a class="img-link" href="#" aria-label="Apri il sito del Ministero dello Sviluppo Economico">
+                        <img class="logo" src="/src/assets/Incentivi_assets/logo-ministero-sviluppo-economico.svg" alt="Logo Ministero dello Sviluppo Economico">
+                    </a>
+                    <a class="img-link" href="#" aria-label="Apri il sito dell'Unione Europea">
+                        <img class="logo" src="src/assets/Incentivi_assets/logo-unione-europea.svg" alt="Logo Unione Europea">
+                    </a>
+                    <a class="img-link" href="#" aria-label="Apri il sito dell'Agenzia di Coesione Territoriale">
+                        <img class="logo" src="src/assets/Incentivi_assets/logo-agenzia-coesione-territoriale.svg" alt="Logo Agenzia di Coesione Territoriale">
+                    </a>
+                    <a class="img-link" href="#" aria-label="Apri il sito del Pon">
+                        <img class="logo" src="src/assets/Incentivi_assets/logo-pon.svg" alt="Logo Pon">
+                    </a>
                 </div>
                 <div class="settings">
                     <ul class="languages">
-                        <li><a class="language" href="#" aria-label="">ITA</a></li>
-                        <li><a class="language" href="#" aria-label="">ENG</a></li>
+                        <li><a class="language" href="#" aria-label="Traduci in italiano">ITA</a></li>
+                        <li><a class="language" href="#" aria-label="Traduci in inglese">ENG</a></li>
                     </ul>
-                    <button class="button" type="button" name="accedi" aria-label="">ACCEDI</button>
+                    <button class="button" type="button" name="accedi" aria-label="Accedi">ACCEDI</button>
                 </div>
             </div>
         </div>
@@ -43,16 +48,20 @@
         <div class="content-wrapper">
             <div class="main-header">
                 <div class="logo-wrapper">
-                    <a class="img-link" href="http://localhost:5173/incentivi-home.html" aria-label="">
-                        <img class="logo" src="src/assets/Incentivi_assets/logo-incentivi.svg" alt="">
+                    <a class="img-link" href="http://localhost:5173/incentivi-home.html" aria-label="Vai alla Homepage">
+                        <img class="logo" src="src/assets/Incentivi_assets/logo-incentivi.svg" alt="Logo Incentivi.gov">
                     </a>
                 </div>
                 <nav class="navbar" role="menu" aria-labelledby="main-menu">
                     <h2 id="main-menu" class="visuallyhidden">Menu di navigazione</h2>
                     <li class="nav-item"><a class="nav-item-text" href="#">Catalogo</a></li>
-                    <li class="nav-item"><a class="nav-item-text" href="#" aria-current="true">Chi siamo</a></li>
+                    <li class="nav-item"><a class="nav-item-text" href="http://localhost:5173/incentivi-chisiamo.html" >Chi siamo</a></li>
                     <li class="nav-item"><a class="nav-item-text" href="#">Glossario</a></li>
                 </nav>
+                <div class="mobile-icons">
+                    <button class="user-icon" aria-label="Accedi"></button>
+                    <button class="menu-icon" aria-label="Apri il Menu"></button>
+                </div>
             </div>
         </div>
     </div>
@@ -74,17 +83,79 @@
                             <li class="list-item">Per dare valore al territorio</li>
                         </ul>
                     </div>
-                    <button class="button">VAI AL CATALOGO</button>
+                    <div class="button-container">
+                        <a class="link-item" href="#" role="button" aria-label="Vai alla pagina Catalogo">VAI AL CATALOGO</a>
+                    </div>
                 </div>
                 <div class="img-container">
                     <div class="bg-container"></div>
-                    <img class="image" src="./src/assets/Incentivi_assets/piu-richiesti.png">
+                    <img class="image" src="./src/assets/Incentivi_assets/chisiamo-description.png">
                     <div class="shape-container"></div>
                 </div>
             </div>
             <div class="simple-text">
                 <div class="description">
-                    Incentivi.gov.it è lo strumento del Ministero dello sviluppo economico per facilitare la ricerca degli incentivi da parte dei cittadini e delle imprese sia per nuove attività sia per consolidare quelle già attive.
+                    <strong>Incentivi.gov.it</strong> è lo strumento del <strong>Ministero dello sviluppo economico</strong> per facilitare la ricerca degli <strong>incentivi</strong> da parte dei cittadini e delle imprese sia per nuove attività sia per consolidare quelle già attive.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="description-search-box">
+        <div class="content-wrapper">
+            <div class="wrapper">
+                <div class="item-wrapper">
+                    <div class="logo-wrapper">
+                        <a class="img-link" href="http://localhost:5173/incentivi-home.html" aria-label="Vai alla Homepage">
+                            <img class="logo" src="src/assets/Incentivi_assets/logo-incentivi-white.svg" alt="Logo Incentivi.gov">
+                        </a>
+                    </div>
+                    <div class="searchbar">
+                        <div class="search">trasformazione digitale</div>
+                        <div class="btn-search"></div>
+                    </div>
+                    <div class="icons">
+                        <img class="icon" src="./src/assets/Incentivi_assets/play-white.svg" alt="Play">
+                        <img class="icon" src="./src/assets/Incentivi_assets/pause-white.svg" alt="Pause">
+                    </div>
+                </div>
+                <div class="text-wrapper">
+                    <div class="description">
+                        Si tratta di un <strong class="yellow">motore di ricerca</strong> che consente di individuare le misure che meglio rispondono alle esigenze di ogni utente, grazie ad una dettagliata classificazione degli incentivi messi a disposizione dal Mise. Per ogni agevolazione, infatti, sono specificate le categorie di interesse, le date di apertura e chiusura degli sportelli, le caratteristiche tecniche, i costi ammessi e l’ambito territoriale. Sul sito saranno inoltre sempre aggiornate la normativa e la modulistica funzionali alla presentazione delle domande.
+                        Il portale consente, attraverso un <strong class="yellow">percorso guidato</strong>, di trovare e scegliere tutti gli incentivi finanziati dal Ministero dello sviluppo economico, compresi quelli previsti dal Pnrr, in continua interrelazione con i contenuti presenti sul sito Mise. In una seconda fase, la sua operatività verrà estesa anche alle misure e alle sovvenzioni di altri enti e istituzioni.
+                        È infine prevista un’<strong class="yellow">area riservata</strong> alle pubbliche amministrazioni per offrire report e dati aggiornati, utili alla programmazione e alla conoscenza dello stato delle misure in tempo reale.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="simple-text-box">
+        <div class="content-wrapper">
+            <div class="wrapper">
+                <div class="logo-wrapper">
+                    <a class="img-link" href="http://localhost:5173/incentivi-home.html" aria-label="Apri il sito del Ministero dello Sviluppo Economico">
+                        <img class="logo" src="src/assets/Incentivi_assets/logo-ministero-sviluppo-economico-blue.svg" alt="Logo Ministero dello Sviluppo Economico">
+                    </a>
+                </div>
+                <div class="text-wrapper">
+                    <div class="description">
+                        Il progetto Incentivi.gov.it è diventato operativo con il <a class="text-link" href="#">decreto del Ministro dello sviluppo economico Giancarlo Giorgetti del 30 settembre 2021 - Criteri per lo sviluppo e il funzionamento della piattaforma “Incentivi.gov.it.</a> e viene finanziato con risorse comunitarie del <a class="text-link" href="#">PON GOV Capacità Istituzionale 2014-2020</a>, programma operativo comunitario che punta a rendere la Pubblica Amministrazione più efficiente, efficace e vicina a territori, cittadini e imprese.
+                        La progettazione e la definizione dei contenuti tecnici e dei servizi offerti dalla piattaforma sono curati dalla Direzione generale per gli incentivi alle imprese del Ministero, che si avvale di Invitalia in qualità di soggetto attuatore. 
+                        L’Ufficio stampa e comunicazione del Ministero coordina e indirizza la presentazione dei contenuti e la promozione della piattaforma Incentivi.gov.it.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="quote-banner">
+        <div class="content-wrapper">
+            <div class="wrapper">
+                <div class="quote">Gli incentivi nascono per aiutare le imprese vere, dove c’è un’idea imprenditoriale, il coraggio, lo spirito d’iniziativa che poi crea lo sviluppo</div>
+                <div class="subtitle">
+                    <p class="author">Giancarlo Giorgetti</p>
+                    <p class="author-description">Ministro dello sviluppo economico</p>
                 </div>
             </div>
         </div>

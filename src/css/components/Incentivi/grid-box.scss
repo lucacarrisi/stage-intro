@@ -72,7 +72,8 @@
             }
         }
 
-        .button {
+        .link-item {
+            @extend .button;
             @extend .button-red;
         }
     }
