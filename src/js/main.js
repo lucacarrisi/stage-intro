@@ -1,2 +1,3 @@
-console.log("Hello World!");
+import First from './exercises/first.js'
 
+First();
