@@ -209,7 +209,52 @@ export default function First(){
                 chiamate[1]['afternoon'][chiamata.name] = chiamata.value
             }
         }
-    })
+    });
 
-    console.log(myArray, secondArray, thirdArray, fourthArray, fifthArray, value, array71, valueIndex, myArray, trovato, final, finalValues, secondValues, chiamateValues, chiamate)
+    console.log(myArray, secondArray, thirdArray, fourthArray, fifthArray, value, array71, valueIndex, myArray, trovato, final, finalValues, secondValues, chiamateValues, chiamate);
+
+
+    const myString = 'ciao mondo ';
+    const comparisonString = 'ciao mondo'
+
+    console.log(myString, myString.length, myString.trim(), myString.trim().length);
+
+    if(myString.trim() === comparisonString){
+        console.log('uguali');
+    }else{
+        console.log('diversi')
+    }
+
+    const dirtyString = 'ciao$ mon$do';
+    const clearString = dirtyString.replaceAll('$', '');
+
+    console.log(dirtyString, clearString);
+
+    const numberString = 'Ho fatto #N chiamate, da #K paesi';
+    const numChiamate = 5;
+    const numPaesi = 7;
+
+    const finalString = numberString.replace('#N', numChiamate).replace('#K', numPaesi);
+
+    console.log(numberString, finalString);
+
+    console.log(finalString.concat(' testo'), finalString.substring(0, 8), finalString.endsWith('i'), finalString.includes('fatto', 'paesi'), finalString.toLowerCase(), finalString.toUpperCase());
+
+
+    const arrayString = ['chiamate', 'ho', 'Chiamate,', ', da'];
+
+    let nonTrovato = false;
+    arrayString.forEach(string => {
+        if(!finalString.toLowerCase().includes(string.toLowerCase())){
+            nonTrovato = true;
+        }
+    });
+    if(nonTrovato){
+        console.log('non ho trovato tutte le parole');
+    }else{
+        console.log('trovato tutte le parole');
+    }
+
+
+
 }
