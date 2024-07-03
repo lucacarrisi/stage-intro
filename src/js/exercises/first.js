@@ -95,6 +95,8 @@ export default function First(){
     }
 
 
+    // METODI ARRAY
+    
     const myArray = [24, 5, 6, 8, 34, 71, -1, 71];
 
     myArray.push(7)
