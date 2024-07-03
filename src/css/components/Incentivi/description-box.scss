@@ -1,0 +1,24 @@
+@import "../../utils/Incentivi_utils/mixin";
+
+.description-box {
+    padding: 44px 0 70px;
+
+    .content-wrapper {
+
+        .textbox {
+            text-align: center;
+
+            .title {
+                @extend .title-style;
+                color: var(--grey);
+                margin-bottom: 30px;
+            }
+
+            .description {
+                @extend .text-style;
+                color: var(--grey);
+                padding: 0 100px;
+            }
+        }
+    }
+}

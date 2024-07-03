@@ -1,14 +1,23 @@
+// COMUNI
 @import "body.scss";
 @import "header.scss";
+@import "breadcrumb-menu.scss";
+@import "footer.scss";
+
+// HOMEPAGE
 @import "hero-banner.scss";
 @import "intro-banner.scss";
 @import "search-box.scss";
 @import "grid-box.scss";
 @import "text-image-box.scss";
 @import "description-cards.scss";
-@import "footer.scss";
 
+// CHI SIAMO
 @import "description-banner.scss";
 @import "description-search-box.scss";
 @import "simple-text-box.scss";
 @import "quote-banner.scss";
+
+// GLOSSARIO
+@import "description-box.scss";
+@import "main-content.scss";

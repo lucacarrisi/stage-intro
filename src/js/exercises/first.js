@@ -211,5 +211,5 @@ export default function First(){
         }
     })
 
-    console.log(myArray, secondArray, thirdArray, fourthArray, fifthArray, value, array71, valueIndex, myArray, trovato, final, finalValues, secondValues, chiamateValues, chiamate, stringVal)
+    console.log(myArray, secondArray, thirdArray, fourthArray, fifthArray, value, array71, valueIndex, myArray, trovato, final, finalValues, secondValues, chiamateValues, chiamate)
 }

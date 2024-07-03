@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Object-oriented JavaScript example</title>
+  </head>
+
+  <body>
+    <button>Press me</button>
+    <div id="saluto"></div>
+    
+    <!--
+    .length
+    includes()
+    startsWith()
+    endsWith()
+    indexOf()
+    slice()
+    toLowerCase()
+    toUpperCase()
+    replace()
+    -->
+<script>
+
+
+const shopping = ["bread", "milk", "cheese", "hummus", "noodles"];
+console.log(shopping.length); // 5
+
+
+console.log(shopping[0]);
+// returns "bread"
+
+// cambiare elemento in posizione 0
+shopping[0] = "tahini";
+console.log(shopping);
+
+console.log(shopping[0]);
+// returns "tahini"
+
+const random = ["tree", 795, [0, 3, 2]];
+console.log(random[2][1]);
+
+
+
+// indexOf()
+const birds = ["Parrot", "Falcon", "Owl"];
+console.log(birds.indexOf("Owl")); //  2
+console.log(birds.indexOf("Rabbit")); // -1
+
+
+// push() - aggiungere un elemento alla fine
+const cities = ["Manchester", "Liverpool"];
+cities.push("Cardiff");
+console.log(cities); // [ "Manchester", "Liverpool", "Cardiff" ]
+cities.push("Bradford", "Brighton");
+console.log(cities); // [ "Manchester", "Liverpool", "Cardiff", "Bradford", "Brighton" ]
+
+const newLength = cities.push("Bristol");
+console.log(cities); // [ "Manchester", "Liverpool", "Bristol" ]
+console.log(newLength); // 3
+
+// unshift() - aggiungere elementi all'inzio
+cities.unshift("Edinburgh");
+console.log(cities); // [ "Edinburgh", "Manchester", "Liverpool" ]
+
+
+// pop() - rimuove dalla fine
+cities.pop();
+console.log(cities); // [ "Manchester" ]
+
+const removedCity = cities.pop();
+console.log(removedCity);
+
+
+// shift() - rimuove dall'inizio
+cities.shift();
+console.log(cities); 
+
+// splice() - rimuove con l'indice
+const index = cities.indexOf("Liverpool");
+if (index !== -1) {
+  cities.splice(index, 1);
+}
+console.log(cities); // [ "Manchester", "Edinburgh", "Carlisle" ]
+
+
+// for...of - vedere tutti gli elementi di un array
+
+for (const bird of birds) {
+  console.log(bird);
+}
+
+
+// map - fare qualcosa su tutti gli elementi di un array
+function double(number) {
+  return number * 3;
+}
+const numbers = [5, 2, 7, 6];
+const doubled = numbers.map(double);
+console.log(doubled); // [ 10, 4, 14, 12 ]
+
+
+
+// filter()
+cities.push('Edinburgh', 'Liverpool', 'Brighton', 'Bristol');
+console.log(cities); 
+
+function isLong(city) {
+  return city.length > 8;
+}
+
+const longer = cities.filter(isLong);
+console.log(longer); // [ "Liverpool", "Edinburgh" ]
+
+
+// split() - dividere una stringa e trasformarla in un array
+const data = "Manchester,London,Liverpool,Birmingham,Leeds,Carlisle";
+const splittedCities = data.split(",");
+console.log(splittedCities);
+
+splittedCities.length;
+console.log(splittedCities[0]); // the first item in the array
+console.log(splittedCities[1]); // the second item in the array
+console.log(splittedCities[splittedCities.length - 1]); // the last item in the array
+
+
+// join () - unire un array e trasformarlo in una stringa
+const commaSeparated = splittedCities.join(", ");
+console.log(commaSeparated);
+
+// toString - fa stessa cosa del join ma non fa scegliere il separatore
+const dogNames = ["Rocket", "Flash", "Bella", "Slugger"];
+
+console.log(dogNames.toString());
+
+
+
+
+// reduce()
+const array = [{ label: 'x', value: 1 }, { label: 'x', value: 2 }, { label: 'x', value: 3 }, { label: 'a', value: 1 }, {label: 'a', value: 9 }];
+
+function reducer(accumulator, currentValue, index) {
+  const returns = accumulator + currentValue;
+  console.log(
+    `accumulator: ${accumulator}, currentValue: ${currentValue}, index: ${index}, returns: ${returns}`,
+  );
+  return returns;
+};
+
+const final = array.reduce((accumulator, current) => {
+        accumulator[current.label] = accumulator[current.label] ? accumulator[current.label] + current.value : current.value ;
+        return accumulator
+    }, {});
+
+console.log(final);
+
+
+
+</script>
+
+
+
+  </body>
+
+
+</html>

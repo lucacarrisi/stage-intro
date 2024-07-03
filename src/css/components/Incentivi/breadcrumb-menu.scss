@@ -1,0 +1,63 @@
+@import "../../utils/Incentivi_utils/mixin";
+
+.breadcrumb-menu {
+    padding: 13px 0;
+
+    .content-wrapper {
+
+        .breadcrumb {
+
+            .menu {
+                display: flex;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+                .menu-item {
+                    font-size: var(--text-16);
+                    font-weight: 600;
+                    line-height: 27px;
+
+                    .text {
+                        color: var(--blue);
+                    }
+
+                    &::after {
+                        content: "/";
+                        margin: 0 15px;
+                        color: var(--grey-strong);
+                    }
+
+                    &:last-child {
+
+                        .text {
+                            color: var(--grey-strong);
+                            font-weight: 400;
+                        }
+
+                        &::after {
+                            content: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include breakpoint('mobile') {
+        margin: 30px 0 0;
+
+        .content-wrapper {
+
+            .breadcrumb {
+    
+                .menu {
+                    
+                    .menu-item {
+                        font-size: var(--text-14);
+                    }
+                }
+            }
+        }
+    }
+}
