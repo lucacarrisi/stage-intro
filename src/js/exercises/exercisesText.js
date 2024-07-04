@@ -7,14 +7,19 @@
 
 //2. Creare un array di N numeri casuali tra 0 e 100, l'inserimento si chiude quando viene inserito il numero -1, stampare array e lunghezza array;
 
-//3. Creare un array di 5 oggetti, dove ogni oggetto deve contenere le chiavi 'name', 'age', restituire il numero di oggetti con 'age' >= 18; !N.B. l'età può essere compresa tra 0 e 99
+//3. Creare un array di 5 oggetti, dove ogni oggetto deve contenere le chiavi 'name', 'age', 'genre', restituire in due array suddivisi per genere M o F, il numero di oggetti con 'age' >= 18; !N.B. l'età può essere compresa tra 0 e 99
 
 //4. Dato un array di oggetti
 //   [{value: -34, key: 'a'}, {value: 2, label: 'b'}, {value: 5, label: 'c'}, {value: -5, label: 'c'}, {value: 2, label: 'c'}, {value: 1, label: 'a'}, {value: 3, label: 'a'}, {value: -102, label: 'b'}, {value: 9, label: 'c'}, {value: -3, label: 't'}]
 //   creare n oggetti quante sono le chiavi, e sommando tutti i value con le stesse chiavi es [{key: 'a', value: '54'},...]
 
 //5. Dato un array di stringhe
-//   ['? ciao', 'mia parola', 'ca$sa', 'va$lo$ri', 'pensiero ', 'lu!ca?', '$$?', '$?='] e un array di caratteri speciali ['$', '?', '^', '#']
-//   copia in un terzo array il primo array, ripulito dai caratteri non ammessi indicati nel secondo array, e dagli spazi in eccesso prima e dopo la stringa
+//   ['? ciao', 'mia parola', 'ca$sa', 'va$lo$ri', 'pensiero #R ', 'lu!ca?', '$$?', '$?='] e un array di caratteri speciali ['$', '?', '^', '#'], ed un simbolo noto #R
+//   copia in un terzo array il primo array, ripulito dai caratteri speciali indicati nel secondo array, e dagli spazi in eccesso prima e dopo la stringa, e sostituisce all'occorenza del simbolo #R con 99
+
+//6. Dato un array di oggetti con chiavi 'name', 'words', [{name: 'Luca', 'words': 'esercizio numero % 1'}, {name: 'Flavia', 'words': 'esercizio numero 2'}, ...] ed un array di caratteri speciali ['?', '!', '[', ']', '%']
+//   Restituisce in un altro array solo i nomi di chi non ha caratteri speciali nella stringa es ['FLavia', ...]
+
+
 
 
