@@ -13,6 +13,8 @@
 //   [{value: -34, key: 'a'}, {value: 2, label: 'b'}, {value: 5, label: 'c'}, {value: -5, label: 'c'}, {value: 2, label: 'c'}, {value: 1, label: 'a'}, {value: 3, label: 'a'}, {value: -102, label: 'b'}, {value: 9, label: 'c'}, {value: -3, label: 't'}]
 //   creare n oggetti quante sono le chiavi, e sommando tutti i value con le stesse chiavi es [{key: 'a', value: '54'},...]
 
-//5.
+//5. Dato un array di stringhe
+//   ['? ciao', 'mia parola', 'ca$sa', 'va$lo$ri', 'pensiero ', 'lu!ca?', '$$?', '$?='] e un array di caratteri speciali ['$', '?', '^', '#']
+//   copia in un terzo array il primo array, ripulito dai caratteri non ammessi indicati nel secondo array, e dagli spazi in eccesso prima e dopo la stringa
 
 
