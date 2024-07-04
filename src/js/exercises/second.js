@@ -21,14 +21,24 @@ export default function Second(){
     //2. Creare un array di N numeri, l'inserimento si chiude quando viene inserito il numero -1, stampare array e lunghezza array;
 
         let thirdArray = []
-        let n;
+         let thirdArrayDo = []
+        let n = Math.floor(Math.random() * 201) - 100;
 
-        for (let i = 0; n != -1; i++) {
-            n = Math.floor(Math.random() * 201) - 100;
+        while (n !== -1){
             thirdArray.push(n);
+            n = Math.floor(Math.random() * 201) - 100;
         }
+
+        let k;
+
+        do{
+            k = Math.floor(Math.random() * 201) - 100;
+            thirdArrayDo.push(k);
+        }while(k !== -1)
+
+
         
-        console.log(thirdArray, thirdArray.length);
+        console.log(thirdArray, thirdArray.length, thirdArrayDo);
 
     
     //3. Creare un array di 5 oggetti, dove ogni oggetto deve contenere le chiavi 'name', 'age', restituire il numero di oggetti con 'age' >= 18; !N.B. l'età può essere compresa tra 0 e 99
@@ -50,52 +60,20 @@ export default function Second(){
     //   [{value: -34, key: 'a'}, {value: 2, label: 'b'}, {value: 5, label: 'c'}, {value: -5, label: 'c'}, {value: 2, label: 'c'}, {value: 1, label: 'a'}, {value: 3, label: 'a'}, {value: -102, label: 'b'}, {value: 9, label: 'c'}, {value: -3, label: 't'}]
     //   creare n oggetti quante sono le chiavi, e sommando tutti i value con le stesse chiavi es [{key: 'a', value: '54'},...]
 
-        const sixthArray = [{value: -34, key: 'a'}, {value: 2, key: 'b'}, {value: 5, key: 'c'}, {value: -5, key: 'c'}, {value: 2, key: 'c'}, {value: 1, key: 'a'}, {value: 3, key: 'a'}, {value: -102, key: 'b'}, {value: 9, key: 'c'}, {value: -3, key: 't'}];
+        const sixthArray = [{value: -34, key: 'a'}, {value: 2, key: 'b'}, {value: 5, key: 'c'}, {value: 5, key: 'kk'}, {value: -5, key: 'c'}, {value: 2, key: 'c'}, {value: 1, key: 'a'}, {value: 3, key: 'a'}, {value: -102, key: 'b'}, {value: 9, key: 'c'}, {value: -3, key: 't'}];
 
-        const seventhArray = sixthArray.reduce((accumulator, current) => {            
+        const seventhArray = sixthArray.reduce((accumulator, current) => {
 
-            // accumulator[current.key] = accumulator[current.key] ? accumulator[current.key] += current.value : current.value;
-            // return accumulator;
-
-
-            // if (accumulator[current.key] = accumulator[current.key]) {
-            //     accumulator [current.key] = accumulator [current.key] + current.value
-            // } 
-            
-            // let obj = {key: accumulator.key, value: accumulator.value};
-            // return obj;
-
-            switch (current.key) {
-                case 'a': {
-                    accumulator[0][current.key] = accumulator[0][current.key] ? accumulator[0][current.key] += current.value : current.value;
-                    break;
-                }
-                case 'b': {
-                    accumulator[1][current.key] = accumulator[1][current.key] ? accumulator[1][current.key] += current.value : current.value;
-                    break;
-                }
-                case 'c': {
-                    accumulator[2][current.key] = accumulator[2][current.key] ? accumulator[2][current.key] += current.value : current.value;
-                    break;
-                }
-                case 't': {
-                    accumulator[3][current.key] = accumulator[3][current.key] ? accumulator[3][current.key] += current.value : current.value;
-                    break;
-                }
-                default:
-                    current.value;
-                    break;
+            if(accumulator.find(item => item.key === current.key)){
+                const currentIndex = accumulator.findIndex(item => item.key === current.key);
+                accumulator[currentIndex].value = accumulator[currentIndex].value + current.value
+            }else{
+                accumulator.push(current);
             }
-            
-            // if (current.key === 'a') {
-            //     accumulator[0][current.key] = accumulator[0][current.key] ? accumulator[0][current.key] += current.value : current.value;
-            // } else {
-            //     accumulator[1][current.key] = accumulator[1][current.key] ? accumulator[1][current.key] += current.value : current.value;
-            // }
 
-            // return accumulator
+            return accumulator;
 
-        }, [{key: "", value: 0}]);
+        }, []);
         
         console.log(seventhArray);
     
