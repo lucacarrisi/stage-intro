@@ -44,4 +44,63 @@ export default function Second(){
         })
 
         console.log(fifthArray.length, fifthArray);
+
+
+    //4. Dato un array di oggetti
+    //   [{value: -34, key: 'a'}, {value: 2, label: 'b'}, {value: 5, label: 'c'}, {value: -5, label: 'c'}, {value: 2, label: 'c'}, {value: 1, label: 'a'}, {value: 3, label: 'a'}, {value: -102, label: 'b'}, {value: 9, label: 'c'}, {value: -3, label: 't'}]
+    //   creare n oggetti quante sono le chiavi, e sommando tutti i value con le stesse chiavi es [{key: 'a', value: '54'},...]
+
+        const sixthArray = [{value: -34, key: 'a'}, {value: 2, key: 'b'}, {value: 5, key: 'c'}, {value: -5, key: 'c'}, {value: 2, key: 'c'}, {value: 1, key: 'a'}, {value: 3, key: 'a'}, {value: -102, key: 'b'}, {value: 9, key: 'c'}, {value: -3, key: 't'}];
+
+        const seventhArray = sixthArray.reduce((accumulator, current) => {            
+
+            // accumulator[current.key] = accumulator[current.key] ? accumulator[current.key] += current.value : current.value;
+            // return accumulator;
+
+
+            // if (accumulator[current.key] = accumulator[current.key]) {
+            //     accumulator [current.key] = accumulator [current.key] + current.value
+            // } 
+            
+            // let obj = {key: accumulator.key, value: accumulator.value};
+            // return obj;
+
+            switch (current.key) {
+                case 'a': {
+                    accumulator[0][current.key] = accumulator[0][current.key] ? accumulator[0][current.key] += current.value : current.value;
+                    break;
+                }
+                case 'b': {
+                    accumulator[1][current.key] = accumulator[1][current.key] ? accumulator[1][current.key] += current.value : current.value;
+                    break;
+                }
+                case 'c': {
+                    accumulator[2][current.key] = accumulator[2][current.key] ? accumulator[2][current.key] += current.value : current.value;
+                    break;
+                }
+                case 't': {
+                    accumulator[3][current.key] = accumulator[3][current.key] ? accumulator[3][current.key] += current.value : current.value;
+                    break;
+                }
+                default:
+                    current.value;
+                    break;
+            }
+            
+            // if (current.key === 'a') {
+            //     accumulator[0][current.key] = accumulator[0][current.key] ? accumulator[0][current.key] += current.value : current.value;
+            // } else {
+            //     accumulator[1][current.key] = accumulator[1][current.key] ? accumulator[1][current.key] += current.value : current.value;
+            // }
+
+            // return accumulator
+
+        }, [{key: "", value: 0}]);
+        
+        console.log(seventhArray);
+    
+    
+
+        
+        
 }
