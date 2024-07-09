@@ -15,13 +15,13 @@ export default function Second(){
             return index % 2 === 0 ? i*2 : i/2;
         })
 
-        console.log(firstArray, secondArray);
+        console.log("ESERCIZIO 1:   ", firstArray, secondArray);
 
 
     //2. Creare un array di N numeri, l'inserimento si chiude quando viene inserito il numero -1, stampare array e lunghezza array;
 
         let thirdArray = []
-         let thirdArrayDo = []
+        let thirdArrayDo = []
         let n = Math.floor(Math.random() * 201) - 100;
 
         while (n !== -1){
@@ -38,7 +38,7 @@ export default function Second(){
 
 
         
-        console.log(thirdArray, thirdArray.length, thirdArrayDo);
+        console.log("ESERCIZIO 2:   ", thirdArray, thirdArray.length, thirdArrayDo);
 
     
     //3. Creare un array di 5 oggetti, dove ogni oggetto deve contenere le chiavi 'name', 'age', restituire il numero di oggetti con 'age' >= 18; !N.B. l'età può essere compresa tra 0 e 99
@@ -53,7 +53,21 @@ export default function Second(){
             }
         })
 
-        console.log(fifthArray.length, fifthArray);
+        console.log("ESERCIZIO 3:   ", fifthArray.length, fifthArray);
+
+        
+    //3. Creare un array di 5 oggetti, dove ogni oggetto deve contenere le chiavi 'name', 'age', 'genre', restituire in due array suddivisi per genere M o F, il numero di oggetti con 'age' >= 18; !N.B. l'età può essere compresa tra 0 e 99
+
+        const fourthArrayAlt = [{ name: 'Flavia', age: 27, genre: "f" }, { name: 'Mario', age: 53, genre: "m" }, { name: 'Luigi', age: 12, genre: "m" }, { name: 'Anna', age: 78, genre: "f" }, { name: 'Rosa', age: 4, genre: "f" }];
+
+
+        const fifthArrayAlt = fourthArrayAlt.filter(obj => {
+            if (obj.age > 0 && obj.age < 99) {
+                 if (obj.age > 18) {
+                    return obj;
+                }
+            }
+        })
 
 
     //4. Dato un array di oggetti
@@ -75,10 +89,33 @@ export default function Second(){
 
         }, []);
         
-        console.log(seventhArray);
-    
+        console.log("ESERCIZIO 4:   ", seventhArray);
     
 
-        
-        
+//5. Dato un array di stringhe
+//   ['? ciao', 'mia parola', 'ca$sa', 'va$lo$ri', 'pensiero #R ', 'lu!ca?', '$$?', '$?='] e un array di caratteri speciali ['$', '?', '^', '#'], ed un simbolo noto #R
+//   copia in un terzo array il primo array, ripulito dai caratteri speciali indicati nel secondo array, e dagli spazi in eccesso prima e dopo la stringa, e sostituisce all'occorenza del simbolo #R con 99
+
+let a = ['? ciao', 'mia parola', 'ca$sa', 'va$lo$ri', 'pensiero #R ', 'lu!ca?', '$$?', '$?='];
+let b = ['$', '?', '^', '#'];
+const x = '#R';
+const y = 99;
+
+let cleanA = a.map( item => {
+	if (item.includes(x)){
+		item = item.replaceAll(x, y);
+	}
+	for( let i=0; i<b.length; i++){
+		if(item.includes(b[i])){
+			item = item.replaceAll(b[i], "");
+		}
+	}
+    item = item.trim();
+    return item;
+});
+
+console.log("array iniziale: ", a);
+console.log("array ripulito: ", cleanA);
+
+
 }
