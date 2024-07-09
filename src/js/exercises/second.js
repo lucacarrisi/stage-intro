@@ -118,4 +118,29 @@ console.log("array iniziale: ", a);
 console.log("array ripulito: ", cleanA);
 
 
+//6. Dato un array di oggetti con chiavi 'name', 'words', [{name: 'Luca', 'words': 'esercizio numero % 1'}, {name: 'Flavia', 'words': 'esercizio numero 2'}, ...] ed un array di caratteri speciali ['?', '!', '[', ']', '%']
+//   Restituisce in un altro array solo i nomi di chi non ha caratteri speciali nella stringa es ['FLavia', ...]
+
+const oggetti = [{name: 'Luca', words: 'esercizio numero % 1'}, {name: 'Flavia', words: 'esercizio numero 2'}, {name: 'Mario', words: 'esercizio [] numero 2'}, {name: 'Luigi', words: 'ciao ciao'}];
+const speciali = ['?', '!', '[', ']', '%'];
+
+let names = [];
+oggetti.forEach ( item => {
+	
+    let presente = false;
+
+	for (let i=0; i<speciali.length; i++){
+		if (item.words.includes(speciali[i])){
+			presente = true;
+            break;
+		}
+    }  
+    if (!presente){
+        names.push(item.name);
+    }
+});
+
+console.log("ESERCIZIO 6: ", names);
+
+
 }
