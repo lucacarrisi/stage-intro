@@ -58,16 +58,37 @@ export default function Second(){
         
     //3. Creare un array di 5 oggetti, dove ogni oggetto deve contenere le chiavi 'name', 'age', 'genre', restituire in due array suddivisi per genere M o F, il numero di oggetti con 'age' >= 18; !N.B. l'età può essere compresa tra 0 e 99
 
-        const fourthArrayAlt = [{ name: 'Flavia', age: 27, genre: "f" }, { name: 'Mario', age: 53, genre: "m" }, { name: 'Luigi', age: 12, genre: "m" }, { name: 'Anna', age: 78, genre: "f" }, { name: 'Rosa', age: 4, genre: "f" }];
+        const arrayA = [{ name: 'Flavia', age: 27, genre: "f" }, { name: 'Mario', age: 53, genre: "m" }, { name: 'Luigi', age: 12, genre: "m" }, { name: 'Anna', age: 78, genre: "f" }, { name: 'Rosa', age: 4, genre: "f" }];
 
 
-        const fifthArrayAlt = fourthArrayAlt.filter(obj => {
-            if (obj.age > 0 && obj.age < 99) {
-                 if (obj.age > 18) {
-                    return obj;
+        const arrayB = arrayA.filter(item => {
+            if (item.age > 0 && item.age < 99) {
+                 if (item.age >= 18) {
+                    return item;
                 }
             }
         })
+
+        const arrayC = arrayB.reduce((accumulator, current) => {
+            if (current.genre === "f") {
+                accumulator[0].push(current); 
+            } else {
+                accumulator[1].push(current);
+            }
+            return accumulator;
+        },[[], []])
+
+        // const arrayC = arrayB.reduce((accumulator, current) => {
+        //     if (current.genre === "f") {
+        //     accumulator[0][current.genre] = accumulator[0][current.genre] ? accumulator[0][current.genre] + current.name + current.age : current.name + current.age;
+ 
+        //     } else {
+        //     accumulator[1][current.genre] = accumulator[1][current.genre] ? accumulator[1][current.genre] + current.name + current.age : current.name + current.age;
+        //     }
+        //     return accumulator;
+        // },[[{f: {}}], [{m: {}}]])
+
+        console.log(arrayC);
 
 
     //4. Dato un array di oggetti

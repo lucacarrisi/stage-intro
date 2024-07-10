@@ -21,4 +21,23 @@
             }
         }
     }
+
+    @include breakpoint('mobile') {
+        padding: 30px 0;
+
+        .content-wrapper {
+
+            .textbox {
+    
+                .title {
+                    margin-bottom: 10px;
+                }
+    
+                .description {
+                    font-size: var(--text-16);
+                    padding: 0;
+                }
+            }
+        }
+    }
 }

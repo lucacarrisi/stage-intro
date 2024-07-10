@@ -50,6 +50,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    box-sizing: border-box;
 
                     .image {
                         max-width: 88px;
