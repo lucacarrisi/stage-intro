@@ -3,6 +3,7 @@ const { it } = require("node:test");
 function weatherApp () {
 
     const $wrappers = document.querySelectorAll(".weather-widget");
+    const $template = document.querySelector(".day-template");
 
     const data = {
         "queryCost": 1,
@@ -469,6 +470,7 @@ function weatherApp () {
         }
        };
 
+
     function init (){
         $wrappers.forEach($wrapper => writeUI($wrapper));
     }
@@ -490,10 +492,19 @@ function weatherApp () {
         let date = new Date(currentDay.datetime);
         let weekDay = date.getDay();
         const weekDays = ["Dom", "Lun", "Mar", "Mer", "Gio", "Ven", "Sab",]
-        
-        const template = weekDays[weekDay] + "  " + date.toLocaleDateString('it') + ",  " + temperatureCelsius(temperature) + " °";
-        const $day = template;
-        $days.innerHTML += `<div class="day">${$day}</div>`;
+
+        const $currentTemplate = $template.cloneNode(true);
+        const $dayName = $currentTemplate.querySelector('.day-name');
+        const $date = $currentTemplate.querySelector('.date');
+        const $temperature = $currentTemplate.querySelector('.temperature .value');
+
+        $dayName.innerText = weekDays[weekDay];
+        $date.innerText = date.toLocaleDateString();
+        $temperature.innerText = temperatureCelsius(temperature);
+        $currentTemplate.classList.remove('d-none');
+        $currentTemplate.classList.add('day');
+
+        $days.appendChild($currentTemplate);
     }
     
     const temperatureCelsius = fahrenheit => (((fahrenheit - 32) * 5/9).toFixed(1)); // funzione per convertire in Celsius

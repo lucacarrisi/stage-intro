@@ -61,22 +61,16 @@ export default function Second(){
         const arrayA = [{ name: 'Flavia', age: 27, genre: "f" }, { name: 'Mario', age: 53, genre: "m" }, { name: 'Luigi', age: 12, genre: "m" }, { name: 'Anna', age: 78, genre: "f" }, { name: 'Rosa', age: 4, genre: "f" }];
 
 
-        const arrayB = arrayA.filter(item => {
-            if (item.age > 0 && item.age < 99) {
-                 if (item.age >= 18) {
-                    return item;
+        const arrayC = arrayA.reduce((accumulator, current) => {
+            if(current.age >= 18){
+                if (current.genre === "f") {
+                    accumulator[0].push(current);
+                } else {
+                    accumulator[1].push(current);
                 }
             }
-        })
-
-        const arrayC = arrayB.reduce((accumulator, current) => {
-            if (current.genre === "f") {
-                accumulator[0].push(current); 
-            } else {
-                accumulator[1].push(current);
-            }
             return accumulator;
-        },[[], []])
+            },[[], []])
 
         // const arrayC = arrayB.reduce((accumulator, current) => {
         //     if (current.genre === "f") {
@@ -123,14 +117,12 @@ const x = '#R';
 const y = 99;
 
 let cleanA = a.map( item => {
-	if (item.includes(x)){
-		item = item.replaceAll(x, y);
-	}
+    item = item.replaceAll(x, y);
+
 	for( let i=0; i<b.length; i++){
-		if(item.includes(b[i])){
-			item = item.replaceAll(b[i], "");
-		}
+        item = item.replaceAll(b[i], "");
 	}
+
     item = item.trim();
     return item;
 });
@@ -153,7 +145,6 @@ oggetti.forEach ( item => {
 	for (let i=0; i<speciali.length; i++){
 		if (item.words.includes(speciali[i])){
 			presente = true;
-            break;
 		}
     }  
     if (!presente){

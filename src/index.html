@@ -18,6 +18,10 @@
             height: 100%;
             gap: 20px;
 
+        .d-none{
+            display: none;
+        }
+
             .weather-widget {
                 background-image: linear-gradient(rgb(43, 170, 199), rgb(198, 251, 255));
                 border: .5px ridge rgb(28, 74, 86);
@@ -85,7 +89,9 @@
                         gap: 8px;
                         
                         .day {
+                            gap: 6px;
                             font-size: 25px;
+                            display: flex;
                         }
                     }
                 }
@@ -131,6 +137,11 @@
             </div>
         </div>
     </div>
+     <div class="day-template d-none" >
+         <div class="day-name"></div>
+         <div class="date"></div>
+         <div class="temperature"><span class="value"></span> °</div>
+     </div>
  </div>
 
 <script type="text/javascript" src="js/exercises/weather-app.js"></script>
