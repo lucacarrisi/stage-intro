@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Esercizi js 2</title>
+  </head>
+
+  <body>
+    
+    <!--
+
+    Esercizi js 2
+
+    -->
+
+<script>
+
+let input = [];
+
+// 1. Array squared
+
+input = [1, 2, 3, 4, 5];
+
+let inputSquared = input.map( item => item*item)
+
+console.log("Array squared: ", inputSquared);
+
+
+// 2. Sum of every positive element
+
+input = [1, -4, 12, 0, -3, 29, -150];
+
+let inputPositive = input.filter( item => item >= 0)
+
+let inputReduced = inputPositive.reduce((accumulator, current) => {
+  accumulator += current;
+  return accumulator;
+})
+
+console.log("Positive array: ", inputPositive, inputReduced);
+
+
+// 3. Calculate median and mean
+
+input = [12, 46, 32, 64];
+
+let sum = input.reduce((accumulator, current) => {
+  accumulator += current;
+  return accumulator;
+})
+
+let mean = sum / input.length;
+
+console.log("Mean: ", input, sum, mean);
+// manca mediana
+
+
+// 4. Get name initials
+
+input = "George Raymond Richard Martin";
+
+let inputArray = input.split(" ");
+
+let initialsArray = inputArray.map( item => {
+  return item[0];
+})
+
+let initials = initialsArray.join(" ");
+
+console.log("Name initials: ", inputArray, initialsArray, initials);
+
+
+// 5. Age difference from the youngest and oldest
+
+input = [
+  {
+    name: "John",
+    age: 13,
+  },
+  {
+    name: "Mark",
+    age: 56,
+  },
+  {
+    name: "Rachel",
+    age: 45,
+  },
+  {
+    name: "Nate",
+    age: 67,
+  },
+  {
+    name: "Jennifer",
+    age: 65,
+  },
+];
+
+let age = input.map( item => {
+  return item.age;
+})
+
+let resultArray = [];
+resultArray.push(Math.min(...age), Math.max(...age), Math.max(...age) - Math.min(...age));
+
+console.log("Age difference: ", resultArray);
+
+
+// 6. Numeronyms
+
+input = "Every developer likes to mix kubernetes and javascript";
+
+let arrayWords = input.split(" ")
+
+let newWords = arrayWords.map( item => {
+  if(item.length > 4){
+    return item[0] + (item.length - 2) + item[item.length - 1];
+  } else {
+    return item;
+  }
+})
+
+let newInput = newWords.join(" ");
+
+console.log("Numeronyms: ", arrayWords, newInput);
+
+
+// 7. n! with Map and Reduce
+
+input = 6;
+let numArray = [];
+numArray.length = input;
+
+numArray.fill(0, 0, input);
+
+let fullArray = numArray.map( item => {
+  return item = input--;
+})
+
+let factorial = fullArray.reduce((accumulator, current) => {
+  accumulator *= current;
+  return accumulator
+})
+
+console.log("Factorial: ", numArray, fullArray, factorial);
+
+
+// 8. Count elements in array of arrays
+
+input = [
+  ["a", "b", "c"],
+  ["c", "d", "f"],
+  ["d", "f", "g"],
+];
+
+let countingArray = input.flat().reduce((accumulator, current) => {
+  accumulator[current] = accumulator[current] ? accumulator[current] + 1 : 1;
+  return accumulator;
+}, {})
+
+console.log("Count elements: ", countingArray);
+
+
+// 9. High performing students
+
+const students = [
+  { name: "Alice", scores: [90, 85, 92] },
+  { name: "Bob", scores: [75, 80, 85] },
+  { name: "Charlie", scores: [90, 95, 85] },
+  { name: "Jack", scores: [100, 100, 100] }
+];
+
+let scores = students.map((item) => {
+  let sum = item.scores.reduce((accumulator, current) => {
+    accumulator += current;
+    return accumulator
+  })
+  return {name: item.name, score: sum / item.scores.length}
+})
+
+let bestStudents = scores.filter((item) => {
+  if (item.score >= 90) {
+  return item;
+  }
+})
+
+console.log("Performing students: ", scores, bestStudents);
+
+// 10. High Priced Product Categories
+
+const products = [
+  { name: "Product 1", price: 20, category: "Electronics" },
+  { name: "Product 2", price: 30, category: "Clothes" },
+  { name: "Product 3", price: 40, category: "Electronics" },
+  { name: "Product 4", price: 50, category: "Clothes" },
+  { name: "Product 5", price: 60, category: "Clothes" },
+  { name: "Product 6", price: 70, category: "Electronics" },
+  { name: "Product 7", price: 80, category: "Clothes" },
+  { name: "Product 8", price: 90, category: "Electronics" },
+];
+
+let categories = products.reduce((accumulator, current) => {
+  accumulator[current.category] = accumulator[current.category] ? accumulator[current.category] + current.price : current.price;
+  return accumulator;
+}, {})
+
+console.log("High priced: ", categories);
+
+
+
+</script>
+</body>
+</html>
+
