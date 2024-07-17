@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
 
 
     <style>
@@ -18,83 +19,140 @@
             height: 100%;
             gap: 20px;
 
-        .d-none{
+        .d-none {
             display: none;
         }
 
-            .weather-widget {
-                background-image: linear-gradient(rgb(43, 170, 199), rgb(198, 251, 255));
-                border: .5px ridge rgb(28, 74, 86);
-                border-radius: 10px;
-                max-width: 30%;
-                width: 100%;
-                min-height: 240px;
-                padding: 10px 20px;
-                box-shadow: 0 0 40px 1px rgba(0, 0, 0, .1);
-                transform: scale(1);
-                transition: .5s ease-in-out;
-                font-family: 'Urbanist';
-                font-weight: 600;
-                color: rgb(49, 56, 58);
-                display: flex;
-                flex-direction: column;
+        .weather-widget {
+            background-image: linear-gradient(rgb(43, 170, 199), rgb(198, 251, 255));
+            border: .5px ridge rgb(28, 74, 86);
+            border-radius: 10px;
+            max-width: 30%;
+            width: 100%;
+            min-height: 240px;
+            padding: 10px 20px;
+            box-shadow: 0 0 40px 1px rgba(0, 0, 0, .1);
+            transform: scale(1);
+            transition: .5s ease-in-out;
+            font-family: 'Urbanist';
+            font-weight: 600;
+            color: rgb(49, 56, 58);
+            display: flex;
+            flex-direction: column;
 
-                &:hover {
-                    transform: scale(1.05);
-                    transition: .3s ease-in-out;
-                }
+        &:hover {
+            transform: scale(1.05);
+            transition: .3s ease-in-out;
+        }
 
-                .top-wrapper {
-                    display: flex;
-                    width: 100%;
-                    height: 100%;
-                    justify-content: space-between;
-                    align-items: center;
-                    border-bottom: 1.5px solid rgb(28, 74, 86);
-                    gap: 10px;
+        .top-wrapper {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1.5px solid rgb(28, 74, 86);
+            gap: 10px;
 
-                    .image-wrapper {
-                        max-width: 50%;
-                        min-width: 50%;
-                        height: 150px;
-                        margin: 10px 0;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        .image {
-                            max-width: 200px;
-                            max-height: 150px;
-                        }
-                    }
-                    .city-wrapper {
-                        max-width: 50%;
-                        min-width: 50%;
+        .image-wrapper {
+            max-width: 50%;
+            min-width: 50%;
+            height: 150px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-                        .city {
-                            text-align: center;
-                            font-size: 60px;
-                            margin-top: 10px;
-                            justify-self:flex-end;
-                            word-break: break-word;
-                        }    
-                    }     
-                }
+        .image {
+            max-width: 200px;
+            max-height: 150px;
+        }
 
-                .bottom-wrapper {
-                    .days {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        padding: 10px;
-                        gap: 8px;
-                        
-                        .day {
-                            gap: 6px;
-                            font-size: 25px;
-                            display: flex;
-                        }
-                    }
-                }
+        }
+        .city-wrapper {
+            max-width: 50%;
+            min-width: 50%;
+
+        .city {
+            text-align: center;
+            font-size: 60px;
+            margin-top: 10px;
+            justify-self: flex-end;
+            word-break: break-word;
+        }
+
+        }
+        }
+
+        .bottom-wrapper {
+
+        .days {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px;
+            gap: 8px;
+
+        .day {
+            gap: 6px;
+            font-size: 25px;
+            display: flex;
+        }
+
+        }
+        }
+
+        .loader {
+            display: none;
+        }
+
+        &.loading {
+             background-image: linear-gradient(rgb(43, 170, 199), rgb(198, 251, 255));
+             position: relative;
+
+         &:after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
+            background-color: rgba(0,0,0, 0.2);
+            top: 0;
+            left: 0;
+            border-radius: 10px;
+          }
+
+        .loader {
+            width: 48px;
+            height: 48px;
+            border: 5px solid #FFF;
+            border-bottom-color: rgb(28, 74, 86);
+            border-radius: 50%;
+            display: block;
+            box-sizing: border-box;
+            animation: rotate 2s linear infinite;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 2;
+            margin: auto;
+        }
+
+        }
+
+
+        }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
             }
         }
     </style>
@@ -103,16 +161,17 @@
 <body>
 
 
- <div class="content-wrapper">
+<div class="content-wrapper">
     <h1>Hello World</h1>
     <div class="weather-widget">
+        <div class="loader"></div>
         <div class="top-wrapper">
             <div class="image-wrapper">
                 <img class="image" src="./assets/sun-svgrepo-com.svg" alt="Sole">
             </div>
             <div class="city-wrapper">
                 <div class="city">-</div>
-            </div>  
+            </div>
         </div>
         <div class="bottom-wrapper">
             <div class="days">
@@ -123,13 +182,14 @@
         </div>
     </div>
     <div class="weather-widget">
+        <div class="loader"></div>
         <div class="top-wrapper">
             <div class="image-wrapper">
                 <img class="image" src="./assets/Incentivi_assets/cittadino.svg" alt="Sole">
             </div>
             <div class="city-wrapper">
                 <div class="city">-</div>
-            </div>  
+            </div>
         </div>
         <div class="bottom-wrapper">
             <div class="days">
@@ -139,12 +199,12 @@
             </div>
         </div>
     </div>
-     <div class="day-template d-none" >
-         <div class="day-name"></div>
-         <div class="date"></div>
-         <div class="temperature"><span class="value"></span> °</div>
-     </div>
- </div>
+    <div class="day-template d-none">
+        <div class="day-name"></div>
+        <div class="date"></div>
+        <div class="temperature"><span class="value"></span> °</div>
+    </div>
+</div>
 
 <script type="text/javascript" src="js/exercises/weather-app.js"></script>
 </body>
